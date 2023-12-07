@@ -18,6 +18,7 @@ def music_view2(request):
     print(clicked_value)
     if request.method == 'POST':
         clik = request.POST.get('clicked_')
+        
         score = music21.converter.parse("C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\adom\\templates\\848.xml")
         # path = C:\Users\KOFI ADUKPO\Downloads\solfa\\{}
         # score = music21.converter.parse(path)
@@ -736,7 +737,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click(request):
     lists = list(range(1, 1001))
-    directory = r"C:\Users\KOFI ADUKPO\Desktop\code\aseda\adom\templates\lyrics"
+    directory = r"adom\templates\lyrics"
     kpo = []
 
     with os.scandir(directory) as entries:
@@ -807,7 +808,7 @@ def search_hymn(request):
         print(text_input_value)
         
 
-        directory_path = r"C:\Users\KOFI ADUKPO\Downloads\lyrics"
+        directory_path = r"adom\templates\lyrics"
 
         # Initialize an empty list to store file names
         kpo = []
@@ -911,8 +912,10 @@ def music_view(request):
 
     clicked_value = request.session.get('clicked_value', None)
     print('Don')
-    print(clicked_value)
-    path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml"
+    print(clicked_value) 
+    # path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml"
+    path = f"adom\\templates\\tunes\\{clicked_value}.xml"
+
     score = music21.converter.parse(path)
     # C:\Users\KOFI ADUKPO\Downloads\solfa
     # score = music21.converter.parse(path)
@@ -1271,7 +1274,7 @@ def music_view(request):
     clicked_value = request.session.get('clicked_value', None)
     print('Don')
     print(clicked_value)
-    path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml"
+    path = f"adom\\templates\\tunes\\{clicked_value}.xml"
     score = music21.converter.parse(path)
     # C:\Users\KOFI ADUKPO\Downloads\solfa
     # score = music21.converter.parse(path)
