@@ -9,6 +9,7 @@ from django.shortcuts import redirect
 from django.http import HttpResponse
 import os
 from fuzzywuzzy import fuzz
+
 import fluidsynth
 from IPython.display import display, Audio
 from midi2audio import FluidSynth
@@ -18,6 +19,7 @@ from pydub import AudioSegment
 import random
 import string
 
+
 # from .models import NoteList
 
 def music_view2(request):
@@ -26,7 +28,8 @@ def music_view2(request):
     print(clicked_value)
     if request.method == 'POST':
         clik = request.POST.get('clicked_')
-        score = music21.converter.parse("C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\adom\\templates\\848.xml")
+
+        # score = music21.converter.parse("C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\adom\\templates\\848.xml")
         # path = C:\Users\KOFI ADUKPO\Downloads\solfa\\{}
         # score = music21.converter.parse(path)
         # C:\Users\KOFI ADUKPO\Downloads\solfa
@@ -87,7 +90,7 @@ def music_view2(request):
 
             notes_and_rests_by_time.append(notes_and_rests)
             notes_and_rests_by_time_.append(nots)
-            
+
 
         # # Print the notes and rests grouped by time
         # for i, notes_and_rests in enumerate(notes_and_rests_by_time):
@@ -187,7 +190,7 @@ def music_view2(request):
                         # Extract the second items from each element
                         if remainder:
                             second_items = [float(note.split()[1]) for note in remainder]
-                            
+
 
                             # Check if all second items are the same
                             is_same_duration = all(item == second_items[0] for item in second_items)
@@ -312,7 +315,7 @@ def music_view2(request):
         # music_stream.show('midi')
         ##
         in_midi = []
-        
+
 
         try:
             # action = data.get('action')
@@ -324,7 +327,7 @@ def music_view2(request):
             values = data.get('values')
 
             if len(values) == 2:
-                
+
 
                 # Extract the selected values and their colors
                 value1 = values[0]['value']
@@ -335,7 +338,7 @@ def music_view2(request):
                 print(value2)
                 if value1 > value2:
                     chords = chords[value2:value1]
-                    durations = durations[value2:value1]   
+                    durations = durations[value2:value1]
                 else:
                     chords = chords[value1:value2]
                     durations = durations[value1:value2]
@@ -382,7 +385,7 @@ def music_view2(request):
     #     path= f"C:\\Users\\KOFI ADUKPO\\Downloads\\solfa\\{solta}.xml"
     #     score = music21.converter.parse(path)
     #     # C:\Users\KOFI ADUKPO\Downloads\solfa
-    #     score = music21.converter.parse(path) 
+    #     score = music21.converter.parse(path)
 
 
     #     # Initialize a list to store notes and rests at each point in time
@@ -439,7 +442,7 @@ def music_view2(request):
 
     #         notes_and_rests_by_time.append(notes_and_rests)
     #         notes_and_rests_by_time_.append(nots)
-            
+
 
     #     # # Print the notes and rests grouped by time
     #     # for i, notes_and_rests in enumerate(notes_and_rests_by_time):
@@ -539,7 +542,7 @@ def music_view2(request):
     #                     # Extract the second items from each element
     #                     if remainder:
     #                         second_items = [float(note.split()[1]) for note in remainder]
-                            
+
 
     #                         # Check if all second items are the same
     #                         is_same_duration = all(item == second_items[0] for item in second_items)
@@ -665,7 +668,7 @@ def music_view2(request):
     #     ##
     #     in_midi = []
     #     # if request.method == 'POST':
-            
+
     #     #     mhb = request.POST.get('clicked_')
     #     #     print(f"mhb: {mhb}")
     #     try:
@@ -678,7 +681,7 @@ def music_view2(request):
     #         values = data.get('values')
 
     #         if len(values) == 2:
-                
+
 
     #             # Extract the selected values and their colors
     #             value1 = values[0]['value']
@@ -689,7 +692,7 @@ def music_view2(request):
     #             print(value2)
     #             if value1 > value2:
     #                 chords = chords[value2:value1]
-    #                 durations = durations[value2:value1]   
+    #                 durations = durations[value2:value1]
     #             else:
     #                 chords = chords[value1:value2]
     #                 durations = durations[value1:value2]
@@ -744,7 +747,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click(request):
     lists = list(range(1, 1001))
-    directory = r"C:\Users\KOFI ADUKPO\Desktop\code\aseda\adom\templates\lyrics"
+    directory = r"/home/kofi532/asedachorale/adom/templates/lyrics"
     kpo = []
 
     with os.scandir(directory) as entries:
@@ -825,9 +828,9 @@ def search_hymn(request):
         text_input_value = request.POST.get('text_input', '')
         # Process the text_input_value as needed
         print(text_input_value)
-        
 
-        directory_path = r"C:\Users\KOFI ADUKPO\Downloads\lyrics"
+
+        directory_path = r"/home/kofi532/asedachorale/adom/templates/lyrics"
 
         # Initialize an empty list to store file names
         kpo = []
@@ -859,7 +862,8 @@ def search_hymn(request):
                         # print(lines[5])
                         # Remove '<br>', '<p>', and '</p>' from the string
                         cleaned_string = lines[5].replace('<br>', '').replace('<p>', '').replace('</p>', '')
-                        hymn_list.append(cleaned_string)
+                        file_name = file_name.replace('.html', '')
+                        hymn_list.append(file_name+cleaned_string)
 
                         # print(cleaned_string)
                     else:
@@ -875,22 +879,30 @@ def search_hymn(request):
 
             if len(str(item))> 10:
                 words = item.split()
-                
+
                 first_10_words = ' '.join(words[:20])
                 cut_hymn.append(first_10_words)
         b = cut_hymn
 
         target_string = text_input_value
 
+
         # Calculate fuzz ratios for all items in the list
         ratios = [fuzz.ratio(item, target_string) for item in b]
 
         # Find the top 5 indexes with the highest fuzz ratios
         top_5_indexes = sorted(range(len(ratios)), key=lambda i: ratios[i], reverse=True)[:10]
-        result = [carry[i] for i in top_5_indexes]
-        result = [filename.replace('.html', '') for filename in result]
+
 
         hymning = [cut_hymn[i] for i in top_5_indexes]
+
+        new_list = []
+
+        for string in hymning:
+            words = string.split()
+            first_word = words[0]
+            new_list.append(first_word)
+        result = new_list.copy()
         mylist = zip(result, hymning)
         context = {
             'mylist': mylist,
@@ -932,7 +944,9 @@ def music_view(request):
     clicked_value = request.session.get('clicked_value', None)
     print('Don')
     print(clicked_value)
-    path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml"
+    # path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+    path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+
     score = music21.converter.parse(path)
     # C:\Users\KOFI ADUKPO\Downloads\solfa
     # score = music21.converter.parse(path)
@@ -994,7 +1008,7 @@ def music_view(request):
 
         notes_and_rests_by_time.append(notes_and_rests)
         notes_and_rests_by_time_.append(nots)
-        
+
 
     # # Print the notes and rests grouped by time
     # for i, notes_and_rests in enumerate(notes_and_rests_by_time):
@@ -1094,7 +1108,7 @@ def music_view(request):
                     # Extract the second items from each element
                     if remainder:
                         second_items = [float(note.split()[1]) for note in remainder]
-                        
+
 
                         # Check if all second items are the same
                         is_same_duration = all(item == second_items[0] for item in second_items)
@@ -1231,7 +1245,7 @@ def music_view(request):
             values = data.get('values')
 
             if len(values) == 2:
-                
+
 
                 # Extract the selected values and their colors
                 value1 = values[0]['value']
@@ -1242,7 +1256,7 @@ def music_view(request):
                 print(value2)
                 if value1 > value2:
                     chords = chords[value2:value1]
-                    durations = durations[value2:value1]   
+                    durations = durations[value2:value1]
                 else:
                     chords = chords[value1:value2]
                     durations = durations[value1:value2]
@@ -1291,7 +1305,7 @@ def music_view(request):
     clicked_value = request.session.get('clicked_value', None)
     print('Don')
     print(clicked_value)
-    path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml"
+    path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
     score = music21.converter.parse(path)
     # C:\Users\KOFI ADUKPO\Downloads\solfa
     # score = music21.converter.parse(path)
@@ -1353,7 +1367,7 @@ def music_view(request):
 
         notes_and_rests_by_time.append(notes_and_rests)
         notes_and_rests_by_time_.append(nots)
-        
+
 
     # # Print the notes and rests grouped by time
     # for i, notes_and_rests in enumerate(notes_and_rests_by_time):
@@ -1362,7 +1376,7 @@ def music_view(request):
     modified_data = notes_and_rests_by_time_
     # Define the chords as lists of note names
     chords = modified_data
-    
+
     chords = [[i, *sublist] for i, sublist in enumerate(chords)]
     # Define the durations for each chord
     # Create a stream to store the notes
@@ -1421,14 +1435,14 @@ def music_view(request):
                     sorted_offsets = sorted_offsets[value2:value1]
                     notes_and_rests_by_time_ = notes_and_rests_by_time_[value2:value1]
                     print(chords)
-                    # durations = durations[value2:value1]   
+                    # durations = durations[value2:value1]
                 else:
                     chords = chords[value1:value2]
                     durations = durations[value1:value2]
                 music_stream = stream.Stream()
 
                 # Iterate through the sorted offsets and add chords to the stream
-                
+
                 for offset, notes_and_rests in zip(sorted_offsets, notes_and_rests_by_time_):
                     chords = []
 
@@ -1470,9 +1484,25 @@ def music_view(request):
         # return render(request, 'home.html', {'timer':timer, 'chords':chords})
     else:
         timer = 1
-        return render(request, 'home.html', {'timer':timer, 'chords':chrd})
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path = '/home/kofi532/asedachorale/media/'+random_word+'.mid'
+        print(midi_file_path)
+        print('rasta')
+        music_stream.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        return render(request, 'home.html', {'timer':timer, 'chords':chrd, 'random_word': random_word})
         # return JsonResponse({'error': 'Invalid request method'}, status=405)
 
+def download_midi(request):
+    random_word = request.session.get('random_word', None)
+    midi_file_path = os.path.join(settings.MEDIA_ROOT, random_word+'.mid')
+    response = FileResponse(open(midi_file_path, 'rb'))
+    response['Content-Disposition'] = f'attachment; filename="{random_word}.mid"'
+    return response
 
 
 

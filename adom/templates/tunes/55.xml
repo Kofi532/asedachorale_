@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 829d8bdf4b61682c7e3132665f0e9f4de4bb0f7f
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="2.0">
@@ -2413,6 +2416,8 @@ Determined, dared, and done.</credit-words>
 		</measure>
 	</part>
 </score-partwise>
+<<<<<<< HEAD
+=======
 =======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
@@ -4829,3 +4834,4 @@ Determined, dared, and done.</credit-words>
 	</part>
 </score-partwise>
 >>>>>>> 93f76bb87477fa29631319195025473706bcaa04
+>>>>>>> 829d8bdf4b61682c7e3132665f0e9f4de4bb0f7f
