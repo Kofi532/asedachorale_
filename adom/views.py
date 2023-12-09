@@ -9,6 +9,14 @@ from django.shortcuts import redirect
 from django.http import HttpResponse
 import os
 from fuzzywuzzy import fuzz
+import fluidsynth
+from IPython.display import display, Audio
+from midi2audio import FluidSynth
+from django.http import FileResponse
+from django.views import View
+from pydub import AudioSegment
+import random
+import string
 
 # from .models import NoteList
 
@@ -792,7 +800,19 @@ def handle_click(request):
 
 
         # return JsonResponse({'status': 'success'})
+        # return JsonResponse({'status': 'success'})
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
 
+        random_word = generate_random_word()
+        midi_file_path = f'C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\media\\{random_word}.mid'
+        # score.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml" 
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
         return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
         # return render(request, 'lyricshtml', {'lists': lists})
         # return redirect('landing_page', value_one=first_value)

@@ -61,6 +61,11 @@
 </div>
   </div>
   <main id="workafriq">
+    <br><br>
+    {% if clicked_value %}
+    <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
+{% endif %}
+
     {% block content %}{% endblock %}
   </main>
   </body>
