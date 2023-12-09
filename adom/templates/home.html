@@ -1,4 +1,5 @@
 {% extends 'jot.html' %}
+{% load static %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -41,8 +42,10 @@
       <div>
         <br><br>
         <!-- <a href="/handle-click/">Home</a> -->
-        <button id="clearButton" class="btn btn-primary">Clear Highlights</button>
-        <button id="playSoundButton" class="btn btn-primary">Play full score</button>
+        <!-- <button id="clearButton" class="btn btn-primary">Clear Highlights</button>
+        <button id="playSoundButton" class="btn btn-primary">Play full score</button> -->
+        <!--<midi-player src="{% static random_word %}.mid" sound-font></midi-player>-->
+        <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
       </div>
       <br>
       <div class="table" id="container"></div>
@@ -50,7 +53,15 @@
   </div>
 
 <!-- Bootstrap JS and other scripts if needed -->
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.22.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
 <script>
+
+
+
+
+
+//////please
     const c = {{chords|safe}};
     const container = document.getElementById('container');
     let selectedCells = [];
