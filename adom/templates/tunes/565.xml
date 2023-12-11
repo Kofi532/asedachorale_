@@ -1,1376 +1,1462 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="2.0">
-	<identification>
-		<creator type="poet">Crediton
-         Thomas Clark (1775-1879)</creator>
-		<encoding>
-			<software>PDFtoMusic Pro v1.6.5 Build 1B9E7 (c) Myriad - http://www.myriad-online.com</software>
-			<?PDFtoMusic Document type 0100- 00000000?>
-			<?Font corrections applied by user?>
-			<supports attribute="new-system" element="print" type="yes" value="yes"/>
-			<supports attribute="new-page" element="print" type="yes" value="yes"/>
-		</encoding>
-	</identification>
-	<defaults>
-		<scaling>
-			<millimeters>5.757347</millimeters>
-			<tenths>40</tenths>
-		</scaling>
-		<page-layout>
-			<page-height>1941.172</page-height>
-			<page-width>1499.997</page-width>
-			<page-margins type="both">
-				<left-margin>69.476</left-margin>
-				<right-margin>69.476</right-margin>
-				<top-margin>69.476</top-margin>
-				 <bottom-margin>69.476</bottom-margin>
-			</page-margins>
-		</page-layout>
-		<appearance>
-			<line-width type="stem">0.2941</line-width>
-			<line-width type="beam">5.0001</line-width>
-			<line-width type="staff">0.8824</line-width>
-			<line-width type="light barline">0.4105</line-width>
-			<line-width type="heavy barline">6.3234</line-width>
-			<line-width type="leger">0.8823</line-width>
-		</appearance>
-	</defaults>
-	<credit page="1">
-		<credit-words  default-x="370.293" default-y="1322.722" justify="left" valign="baseline" font-family="Times New Roman" font-size="24" font-weight="bold" font-style="normal">Crediton
-</credit-words>
-		<credit-words   justify="left" valign="baseline" font-family="Times New Roman" font-size="12" font-weight="normal" font-style="normal">         Thomas Clark (1775-1879)</credit-words>
-	</credit>
-	<credit page="1">
-		<credit-words  default-x="421.470" default-y="92.846" justify="left" valign="baseline" font-family="Times New Roman" font-size="8" font-weight="normal" font-style="normal">(public domain)</credit-words>
-	</credit>
-	<part-list>
-		<score-part id="P1">
-			<part-name></part-name>
-			<score-instrument id="P1-I1">
-				<instrument-name>Instrument 1</instrument-name>
-			</score-instrument>
-			<midi-instrument id="P1-I1">
-				<midi-channel>1</midi-channel>
-				<midi-bank>1</midi-bank>
-				<midi-program>25</midi-program>
-				<volume>50</volume>
-				<pan>0</pan>
-				<elevation>0</elevation>
-				<?Myriad
-				<iddigit>2400</iddigit>
-				?>
-			</midi-instrument>
-		</score-part>
-		<score-part id="P2">
-			<part-name></part-name>
-			<score-instrument id="P2-I1">
-				<instrument-name>Instrument 2</instrument-name>
-			</score-instrument>
-			<midi-instrument id="P2-I1">
-				<midi-channel>2</midi-channel>
-				<midi-bank>1</midi-bank>
-				<midi-program>25</midi-program>
-				<volume>50</volume>
-				<pan>0</pan>
-				<elevation>0</elevation>
-				<?Myriad
-				<iddigit>2400</iddigit>
-				?>
-			</midi-instrument>
-		</score-part>
-	</part-list>
-	<part id="P1">
-		<!--==========================[1,1]=============================-->
-		<measure number="1" width="159">
-			<print new-page="yes">
-				<system-layout>
-					<system-margins>
-						<left-margin>18.612</left-margin>
-						<right-margin>547.793</right-margin>
-					</system-margins>
-					<top-system-distance>674.983</top-system-distance>
-				</system-layout>
-			</print>
-			<attributes>
-				<divisions>6720</divisions>
-				<key>
-					<fifths>5</fifths>
-					<mode>major</mode>
-				</key>
-				<time>
-					<beats>4</beats>
-					<beat-type>4</beat-type>
-				</time>
-				<clef number="1">
-					<sign>G</sign>
-					<line>2</line>
-				</clef>
-				<staff-details number="1" print-object="yes">
-					<staff-lines>5</staff-lines>
-					<staff-tuning line="1">
-						<tuning-step>A</tuning-step>
-						<tuning-octave>3</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="2">
-						<tuning-step>D</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="3">
-						<tuning-step>G</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="4">
-						<tuning-step>B</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="5">
-						<tuning-step>E</tuning-step>
-						<tuning-octave>5</tuning-octave>
-					</staff-tuning>
-					<staff-size>100.00</staff-size>
-				</staff-details>
-				<transpose>
-					<chromatic>-2</chromatic>
-					<octave-change>-1</octave-change>
-				</transpose>
-			</attributes>
-			<note>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-0.29">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-0.29">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,2]=============================-->
-		<measure number="2" width="135">
-			<note>
-				<pitch>
-					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.71">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.71">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-0.29">up</stem>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-70.59">down</stem>
-			</note>
-		</measure>
-		<!--==========================[1,3]=============================-->
-		<measure number="3" width="197">
-			<note>
-				<pitch>
-					<step>G</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="4.71">up</stem>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>2</voice>
-				<type>eighth</type>
-				<stem default-y="-80.59">down</stem>
-				<beam number="1">begin</beam>
-				<notations>
-					<slur type="start" number="1" placement="below" orientation="under"/>
-				</notations>
-			</note>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>2</voice>
-				<type>eighth</type>
-				<stem default-y="-85.59">down</stem>
-				<beam number="1">end</beam>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="4.71">up</stem>
-				<beam number="1">begin</beam>
-				<notations>
-					<slur type="start" number="1" placement="above" orientation="over"/>
-				</notations>
-			</note>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-0.29">up</stem>
-				<beam number="1">end</beam>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>C</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-85.59">down</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-10.29">up</stem>
-				<notations>
-					<articulations>
-						<breath-mark placement="above" relative-x="24.45" relative-y="12.17"/>
-					</articulations>
-				</notations>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-80.59">down</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-0.29">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>B</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-0.29">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,4]=============================-->
-		<measure number="4" width="190">
-			<note>
-				<pitch>
-					<step>G</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="9.71">up</stem>
-				<beam number="1">begin</beam>
-				<notations>
-					<slur type="start" number="1" placement="above" orientation="over"/>
-				</notations>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="15.00">up</stem>
-				<beam number="1">end</beam>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-75.59">down</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>B</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.71">up</stem>
-				<notations>
-					<slur type="start" number="1" placement="below" orientation="under"/>
-				</notations>
-			</note>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-5.29">up</stem>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-5.29">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-10.29">up</stem>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-80.59">down</stem>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
-			</note>
-		</measure>
-		<!--==========================[1,5]=============================-->
-		<measure number="5" width="57">
-			<forward>
-				<duration>17220</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-48.10">.</words>
-				</direction-type>
-			</direction>
-			<barline location="right">
-				<bar-style>heavy</bar-style>
-			</barline>
-		</measure>
-		<!--==========================[1,6]=============================-->
-		<measure number="6" width="54">
-			<barline location="left">
-				<bar-style>heavy</bar-style>
-			</barline>
-			<forward>
-				<duration>12180</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-50.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[1,7]=============================-->
-		<measure number="7" width="225">
-			<print new-system="yes">
-				<system-layout>
-					<system-margins>
-						<left-margin>18.612</left-margin>
-						<right-margin>732.841</right-margin>
-					</system-margins>
-					<system-distance>88.235</system-distance>
-				</system-layout>
-			</print>
-			<attributes>
-				<key>
-					<fifths>0</fifths>
-					<mode>major</mode>
-				</key>
-				<clef number="1">
-					<sign>TAB</sign>
-					<line>5</line>
-				</clef>
-				<staff-details number="1" print-object="yes">
-				</staff-details>
-			</attributes>
-			<forward>
-				<duration>6720</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-0.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-40.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-45.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">.</words>
-				</direction-type>
-			</direction>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>D</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>6</fret>
-						<string>5</string>
-					</technical>
-				</notations>
-			</note>
-		</measure>
-		<!--==========================[1,8]=============================-->
-		<measure number="8" width="146">
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-40.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4200</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-45.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4620</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-40.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4200</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">. .</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4620</duration>
-			</forward>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="9.55">,</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[1,9]=============================-->
-		<measure number="9" width="187">
-			<forward>
-				<duration>2520</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-55.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3780</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-40.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[1,10]=============================-->
-		<measure number="10" width="49">
-			<forward>
-				<duration>6720</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-140.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-140.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-145.45">5.</words>
-				</direction-type>
-			</direction>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>5</string>
-					</technical>
-				</notations>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>3</string>
-					</technical>
-				</notations>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>5</string>
-					</technical>
-				</notations>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>3</string>
-					</technical>
-				</notations>
-			</note>
-			<barline location="right">
-				<bar-style>light-heavy</bar-style>
-			</barline>
-		</measure>
-	</part>
-	<part id="P2">
-		<!--==========================[2,1]=============================-->
-		<measure number="1" width="159">
-			<print new-page="yes">
-				<staff-layout number="1">
-					<staff-distance>110.000</staff-distance>
-				</staff-layout>
-			</print>
-			<attributes>
-				<divisions>6720</divisions>
-				<clef number="1">
-					<sign>TAB</sign>
-					<line>5</line>
-				</clef>
-				<staff-details number="1" print-object="yes">
-					<staff-lines>5</staff-lines>
-					<staff-tuning line="1">
-						<tuning-step>A</tuning-step>
-						<tuning-octave>3</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="2">
-						<tuning-step>D</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="3">
-						<tuning-step>G</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="4">
-						<tuning-step>B</tuning-step>
-						<tuning-octave>4</tuning-octave>
-					</staff-tuning>
-					<staff-tuning line="5">
-						<tuning-step>E</tuning-step>
-						<tuning-octave>5</tuning-octave>
-					</staff-tuning>
-					<staff-size>100.00</staff-size>
-				</staff-details>
-				<transpose>
-					<chromatic>-3</chromatic>
-					<octave-change>-1</octave-change>
-				</transpose>
-			</attributes>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="33.96" default-y="-10.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="41.40" default-y="-25.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="48.84" default-y="-5.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="56.28" default-y="-20.45">#</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="63.72" default-y="-35.45">#</words>
-				</direction-type>
-			</direction>
-			<attributes>
-				<time>
-					<beats>4</beats>
-					<beat-type>4</beat-type>
-				</time>
-			</attributes>
-			<forward>
-				<duration>11760</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,2]=============================-->
-		<measure number="2" width="135">
-			<forward>
-				<duration>4200</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>5880</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="9.55">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>5460</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-5.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">. .</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>5460</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,3]=============================-->
-		<measure number="3" width="197">
-			<forward>
-				<duration>2940</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>7560</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-0.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>7560</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">. .</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4620</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,4]=============================-->
-		<measure number="4" width="190">
-			<forward>
-				<duration>2940</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>7980</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3780</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-5.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>4200</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-0.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3780</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="4.55">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,5]=============================-->
-		<measure number="5" width="57">
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>2</string>
-						<fingering placement="above" relative-x="0.00" relative-y="9.58">5</fingering>
-					</technical>
-				</notations>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>1</string>
-						<fingering placement="above" relative-x="0.00" relative-y="9.58">5</fingering>
-					</technical>
-				</notations>
-			</note>
-		</measure>
-		<!--==========================[2,6]=============================-->
-		<measure number="6" width="54">
-			<forward>
-				<duration>12180</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-0.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,7]=============================-->
-		<measure number="7" width="225">
-			<print new-system="yes">
-				<staff-layout number="1">
-					<staff-distance>110.000</staff-distance>
-				</staff-layout>
-			</print>
-			<attributes>
-				<staff-details number="1" print-object="yes">
-				</staff-details>
-			</attributes>
-			<forward>
-				<duration>4620</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">#</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>1260</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">#</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>840</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-5.45">#</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>1260</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">#</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>1260</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-35.45">#</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>2940</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>2940</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-25.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>5880</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-30.45">. .</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,8]=============================-->
-		<measure number="8" width="146">
-			<forward>
-				<duration>3360</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-5.45">. .</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>13020</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">. .</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,9]=============================-->
-		<measure number="9" width="187">
-			<forward>
-				<duration>2520</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>6720</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-20.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>3780</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-15.45">.</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-5.45">.</words>
-				</direction-type>
-			</direction>
-			<forward>
-				<duration>6720</duration>
-			</forward>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Arial" font-size="10" font-weight="normal" font-style="normal" relative-x="0.00" default-y="-10.45">.</words>
-				</direction-type>
-			</direction>
-		</measure>
-		<!--==========================[2,10]=============================-->
-		<measure number="10" width="50">
-			<note>
-				<pitch>
-					<step>G</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem>none</stem>
-				<notations>
-					<technical>
-						<fret>5</fret>
-						<string>4</string>
-						<fingering placement="above" relative-x="0.00" relative-y="-25.42">5</fingering>
-					</technical>
-				</notations>
-			</note>
-		</measure>
-	</part>
+  <movement-number/>
+  <movement-title>Crediton, CM</movement-title>
+  <identification>
+    <creator type="composer">Thomas Clark, 1807</creator>
+    <creator type="poet"/>
+    <rights>Public Domain</rights>
+    <encoding>
+      <software>NWC2MusicXML</software>
+      <encoding-date>2011-07-29</encoding-date>
+    </encoding>
+  </identification>
+  <defaults>
+    <scaling>
+      <millimeters>8</millimeters>
+      <tenths>36</tenths>
+    </scaling>
+    <page-layout>
+      <page-height>1594</page-height>
+      <page-width>1232</page-width>
+      <page-margins type="odd">
+        <left-margin>100</left-margin>
+        <right-margin>100</right-margin>
+        <top-margin>100</top-margin>
+        <bottom-margin>100</bottom-margin>
+      </page-margins>
+      <page-margins type="even">
+        <left-margin>100</left-margin>
+        <right-margin>100</right-margin>
+        <top-margin>100</top-margin>
+        <bottom-margin>100</bottom-margin>
+      </page-margins>
+    </page-layout>
+  </defaults>
+  <credit page="1">
+    <credit-words default-x="616" default-y="1485" font-size="24" justify="center" valign="top">Crediton, CM</credit-words>
+  </credit>
+  <credit page="1">
+    <credit-words default-x="1123" default-y="1418" font-size="12" justify="right" valign="top">Thomas Clark, 1807</credit-words>
+  </credit>
+  <credit page="1">
+    <credit-words default-x="616" default-y="100" font-size="8" justify="center" valign="bottom">From Hymnary.org (based on a score from the Cyber Hymnal)
+Public Domain</credit-words>
+  </credit> 
+  <part-list>
+    <score-part id="P1">
+      <midi-instrument id="P1">
+        <midi-channel>1</midi-channel>
+        <midi-program>1</midi-program>
+      </midi-instrument>
+    </score-part>
+    <score-part id="P2">
+      <midi-instrument id="P2">
+        <midi-channel>2</midi-channel>
+        <midi-program>92</midi-program>
+      </midi-instrument>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>480</divisions>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>down</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>down</stem>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="2">
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="4">
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="5">
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <forward>
+        <duration>1440</duration>
+      </forward>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="6">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="7">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <forward>
+        <duration>1440</duration>
+      </forward>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="8">
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="9">
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <barline location="right">
+        <bar-style>light-heavy</bar-style>
+      </barline>
+    </measure>
+  </part>
+  <part id="P2">
+    <measure number="1">
+      <attributes>
+        <divisions>480</divisions>
+        <clef>
+          <sign>F</sign>
+          <line>4</line>
+        </clef>
+      </attributes>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="2">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <forward>
+        <duration>1440</duration>
+      </forward>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="4">
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>A</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="5">
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>2</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>down</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>down</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <forward>
+        <duration>1440</duration>
+      </forward>
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="6">
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="7">
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>2</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="8">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>240</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>A</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>down</stem>
+        <staff>1</staff>
+      </note>
+      <backup>
+        <duration>1920</duration>
+      </backup>
+      <note>
+        <pitch>
+          <step>F</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+      <forward>
+        <duration>720</duration>
+      </forward>
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>480</duration>
+        <voice>2</voice>
+        <type>quarter</type>
+        <staff>1</staff>
+      </note>
+    </measure>
+    <measure number="9">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1440</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <dot/>
+        <staff>1</staff>
+      </note>
+      <barline location="right">
+        <bar-style>light-heavy</bar-style>
+      </barline>
+    </measure>
+  </part>
 </score-partwise>
