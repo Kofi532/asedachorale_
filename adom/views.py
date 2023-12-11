@@ -826,8 +826,8 @@ def handle_click(request):
         request.session['random_word'] = random_word
         midi_messages = 1
         try:
-            path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml" 
-            
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+
             score = music21.converter.parse(path)
             score.write('midi', fp=midi_file_path)
         except:
