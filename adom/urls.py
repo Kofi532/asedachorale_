@@ -1,4 +1,3 @@
-# musicapp/urls.py
 from django.urls import path
 from . import views
 from django.conf import settings
@@ -13,6 +12,7 @@ urlpatterns = [
     path('previous/', views.previous_view, name='previous_view'),
     path('search/', views.search_hymn, name='search_hymn'),
     path('download-midi/', views.download_midi, name='download_midi'),
+    path('contact/', views.contact, name='contact'),
 
 ]
 # Serve media files during development

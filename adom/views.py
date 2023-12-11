@@ -1520,5 +1520,6 @@ def download_midi(request):
     response['Content-Disposition'] = f'attachment; filename="{random_word}.mid"'
     return response
 
-
+def contact(request):
+    return render(request, 'contact.html')
 

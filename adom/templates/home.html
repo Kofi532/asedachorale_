@@ -37,20 +37,33 @@
 </head>
 <body>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="row justify-content-center align-items-center" style="height: 100vh;">
       <div>
         <br><br>
-        <!-- <a href="/handle-click/">Home</a> -->
-        <!-- <button id="clearButton" class="btn btn-primary">Clear Highlights</button>
-        <button id="playSoundButton" class="btn btn-primary">Play full score</button> -->
-        <!--<midi-player src="{% static random_word %}.mid" sound-font></midi-player>-->
-        <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
+        <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>        
       </div>
       <br>
       <div class="table" id="container"></div>
     </div>
+  </div> -->
+
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="height: 100vh;">
+      <div class="col-md-6 text-center">
+        <br><br>
+        <!-- Uncomment and modify as needed -->
+        <!-- <a href="/handle-click/" class="btn btn-primary">Home</a> -->
+        <!-- <button id="clearButton" class="btn btn-primary">Clear Highlights</button>
+        <button id="playSoundButton" class="btn btn-primary">Play full score</button> -->
+        <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
+      </div>
+      <div class="col-md-6">
+        <div class="table" id="container"></div>
+      </div>
+    </div>
   </div>
+  
 
 <!-- Bootstrap JS and other scripts if needed -->
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.22.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
