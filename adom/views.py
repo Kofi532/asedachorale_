@@ -746,96 +746,98 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click(request):
+    try:
+        lists = list(range(1, 1001))
+        directory = r"/home/kofi532/asedachorale/adom/templates/lyrics"
+        kpo = []
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                if entry.is_file():
+                    kpo.append(entry.name)
+        file_list = kpo
 
-    lists = list(range(1, 1001))
-    directory = r"/home/kofi532/asedachorale/adom/templates/lyrics"
-    kpo = []
-    with os.scandir(directory) as entries:
-        for entry in entries:
-            if entry.is_file():
-                kpo.append(entry.name)
-    file_list = kpo
+        # Remove '.html' from each element in the list
+        file_list = [file_name.replace('.html', '') for file_name in file_list]
+        def rearrange_list(input_list):
+            def extract_integer(s):
+                # Extracts the integer part from the string
+                num = ''
+                for char in s:
+                    if char.isdigit():
+                        num += char
+                    else:
+                        break
+                return int(num) if num else None
 
-    # Remove '.html' from each element in the list
-    file_list = [file_name.replace('.html', '') for file_name in file_list]
-    def rearrange_list(input_list):
-        def extract_integer(s):
-            # Extracts the integer part from the string
-            num = ''
-            for char in s:
-                if char.isdigit():
-                    num += char
-                else:
-                    break
-            return int(num) if num else None
+            # Custom sorting function based on extracted integers
+            def sort_key(elem):
+                return extract_integer(elem)
 
-        # Custom sorting function based on extracted integers
-        def sort_key(elem):
-            return extract_integer(elem)
+            # Sort the list based on extracted integers
+            sorted_list = sorted(input_list, key=sort_key)
+            return sorted_list
 
-        # Sort the list based on extracted integers
-        sorted_list = sorted(input_list, key=sort_key)
-        return sorted_list
+        # Example list
+        original_list = file_list
 
-    # Example list
-    original_list = file_list
+        # Rearrange the list
+        rearranged_list = rearrange_list(original_list)
+        lists = rearranged_list
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                if entry.is_file():
+                    kpo.append(entry.name)
 
-    # Rearrange the list
-    rearranged_list = rearrange_list(original_list)
-    lists = rearranged_list
-    with os.scandir(directory) as entries:
-        for entry in entries:
-            if entry.is_file():
-                kpo.append(entry.name)
+        value_to_retrieve = request.GET.get('value_to_pass', None)
+        print('hard')
+        print(value_to_retrieve)
+        if value_to_retrieve is not None:
+            clicked_value = value_to_retrieve
+            request.session['clicked_value'] = clicked_value
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-    value_to_retrieve = request.GET.get('value_to_pass', None)
-    print('hard')
-    print(value_to_retrieve)
-    if value_to_retrieve is not None:
-        clicked_value = value_to_retrieve
-        request.session['clicked_value'] = clicked_value
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
-
-        random_word = generate_random_word()
-        midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
-        return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
-
-    if request.method == 'POST':
-        clicked_value = request.POST.get('num')
-        request.session['clicked_value'] = clicked_value
-        print(clicked_value)  # For demonstration, you can use this value as needed
-
-
-        # return JsonResponse({'status': 'success'})
-        # return JsonResponse({'status': 'success'})
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
-
-        random_word = generate_random_word()
-        midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        try:
+            random_word = generate_random_word()
+            midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
+            # score.write('midi', fp=midi_file_path)
+            request.session['random_word'] = random_word
+            midi_messages = 1
             path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
-
             score = music21.converter.parse(path)
             score.write('midi', fp=midi_file_path)
-        except:
-            return render(request, 'sorry.html', {'lists': lists})
-        return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
-        # return render(request, 'lyricshtml', {'lists': lists})
-        # return redirect('landing_page', value_one=first_value)
-    return render(request, 'base.html', {'lists': lists})
+            return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
+
+        if request.method == 'POST':
+            clicked_value = request.POST.get('num')
+            request.session['clicked_value'] = clicked_value
+            print(clicked_value)  # For demonstration, you can use this value as needed
+
+
+            # return JsonResponse({'status': 'success'})
+            # return JsonResponse({'status': 'success'})
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
+
+            random_word = generate_random_word()
+            midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
+            # score.write('midi', fp=midi_file_path)
+            request.session['random_word'] = random_word
+            midi_messages = 1
+            try:
+                path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+
+                score = music21.converter.parse(path)
+                score.write('midi', fp=midi_file_path)
+            except:
+                return render(request, 'sorry.html', {'lists': lists})
+            return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
+            # return render(request, 'lyricshtml', {'lists': lists})
+            # return redirect('landing_page', value_one=first_value)
+        return render(request, 'base.html', {'lists': lists})
+    except:
+        return render(request, 'sorry.html', {'lists': lists})
 
     # return redirect('landing_page') + f'?value_one={first_value}'
 
@@ -1520,5 +1522,6 @@ def download_midi(request):
     response['Content-Disposition'] = f'attachment; filename="{random_word}.mid"'
     return response
 
-
+def contact(request):
+    return render(request, 'contact.html')
 

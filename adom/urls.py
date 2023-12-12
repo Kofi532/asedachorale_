@@ -1,11 +1,10 @@
-# musicapp/urls.py
 from django.urls import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('solfa/', views.music_view, name='music_view'),
+    path('#', views.music_view, name='music_view'),
     path('trigger-action/', views.music_view, name='trigger_action'),
     path('all/', views.index, name='index'),
     path('all/base.html/', views.base, name='base'),
@@ -13,6 +12,7 @@ urlpatterns = [
     path('previous/', views.previous_view, name='previous_view'),
     path('search/', views.search_hymn, name='search_hymn'),
     path('download-midi/', views.download_midi, name='download_midi'),
+    path('contact/', views.contact, name='contact'),
 
 ]
 # Serve media files during development
