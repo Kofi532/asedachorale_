@@ -40,8 +40,13 @@
     <div id="afriq-container">
     <div id="konva-container"></div>
           <div class="navigation" id="button-container">
+<<<<<<< HEAD
             <a href="/mhb/"><button style=" height: 30px;" id="myButtonHome" class="{% if request.path == '/' %}active{% endif %}"><b>M.H.B</b></button></a>
             <a href="/anglican/"><button style="width: 80px; height: 30px;" id="myButtonAbout" class="{% if request.path == '/anglican/' %}active{% endif %}"><b>ANGLICAN</b></button></a>
+=======
+            <a href="/"><button style=" height: 30px;" id="myButtonHome" class="{% if request.path == '/' %}active{% endif %}"><b>M.H.B</b></button></a>
+            <a href="#"><button style="width: 80px; height: 30px;" id="myButtonAbout" class="{% if request.path == '/about/' %}active{% endif %}"><b>ANTHEMS</b></button></a>
+>>>>>>> f765c65ba1b666220b51c1c1ccf017309787ebfc
             <a href="#"><button class="{% if request.path == '/gallery/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonGallery"><b>#</b></button></a>            
             <a href="#"><button class="{% if request.path == '/faq/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonFAQ"><b>#</b></button></a>
             <a href="#"><button style="width: 80px; height: 30px;" id="myButtonContact" class="{% if request.path == '/contact/' %}active{% endif %}"><b>#</b></button></a>
@@ -62,6 +67,7 @@
   </div>
   <main id="workafriq">
 <br><br>
+<<<<<<< HEAD
 
 <div class="container">
   {% if clicked_value %}
@@ -72,6 +78,14 @@
   {% endblock %}
 </div>
 
+=======
+{% if clicked_value %}
+    <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
+{% endif %}
+
+    {% block content %}
+    {% endblock %}
+>>>>>>> f765c65ba1b666220b51c1c1ccf017309787ebfc
   </main>
   </body>
 

@@ -830,6 +830,9 @@ def handle_click(request):
         request.session['random_word'] = random_word
         midi_messages = 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f765c65ba1b666220b51c1c1ccf017309787ebfc
         try:
             path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml" 
             
@@ -837,12 +840,15 @@ def handle_click(request):
             score.write('midi', fp=midi_file_path)
         except:
             return render(request, 'sorry.html', {'lists': lists})
+<<<<<<< HEAD
 
 =======
         path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
         score = music21.converter.parse(path)
         score.write('midi', fp=midi_file_path)
 >>>>>>> c8684bb76d43f77aa2b204a4561ed83509b1a395
+=======
+>>>>>>> f765c65ba1b666220b51c1c1ccf017309787ebfc
         return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
         # return render(request, 'lyricshtml', {'lists': lists})
         # return redirect('landing_page', value_one=first_value)
@@ -1531,5 +1537,6 @@ def download_midi(request):
     response['Content-Disposition'] = f'attachment; filename="{random_word}.mid"'
     return response
 
-
+def contact(request):
+    return render(request, 'contact.html')
 
