@@ -4,6 +4,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the power of Aseda Hymn Harmony—an app that seamlessly blends hymn lyrics and tunes. Immerse yourself in worship and reflection, finding and playing your favorite hymns anytime, anywhere. Experience the soulful connection of lyrics and melodies with Aseda.">
+<meta name="keywords" content="Aseda, hymn app, worship music, hymn lyrics, reflection, spiritual connection, music harmony, worship experience, MHB, Methodist Church Ghana">
+
     <script src="https://unpkg.com/konva@9.2.0/konva.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/konva/7.1.1/konva.min.js"></script>    <meta charset="utf-8" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -42,11 +45,11 @@
           <div class="navigation" id="button-container">
             <a href="/"><button style=" height: 30px;" id="myButtonHome" class="{% if request.path == '/' %}active{% endif %}"><b>M.H.B</b></button></a>
             <a href="#"><button style="width: 80px; height: 30px;" id="myButtonAbout" class="{% if request.path == '/about/' %}active{% endif %}"><b>ANTHEMS</b></button></a>
-            <a href="#"><button class="{% if request.path == '/gallery/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonGallery"><b>#</b></button></a>            
+            <a href="#"><button class="{% if request.path == '/gallery/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonGallery"><b>#</b></button></a>
             <a href="#"><button class="{% if request.path == '/faq/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonFAQ"><b>#</b></button></a>
             <a href="#"><button style="width: 80px; height: 30px;" id="myButtonContact" class="{% if request.path == '/contact/' %}active{% endif %}"><b>#</b></button></a>
-            <a href="/contact/"><button style="width: 80px; height: 30px;" id="myButtonProfile" class="{% if request.path == '/profile/' %}active{% endif %}"><b>CONTACT US</b></button></a>       
-          </div>  
+            <a href="/contact/"><button style="width: 80px; height: 30px;" id="myButtonProfile" class="{% if request.path == '/profile/' %}active{% endif %}"><b>CONTACT US</b></button></a>
+          </div>
 <div id="button-container">
   <a href="/"></a>
   <button style="width: 80px; height: 30px;" id="myButtonHide"></button>
@@ -98,7 +101,7 @@ const navBar = new Konva.Rect({
     width: stage.width(),
     height: stage.height(),
     fill: 'blue',
-    
+
 });
 layer.add(navBar);
 
@@ -245,15 +248,15 @@ if (window.innerWidth < 980) {
         drop_profile.style.display = 'block';
 
       }
-    });  
-  
+    });
+
   const navBar_drop = new Konva.Rect({
     x: 0,
     y: 50,
     width: stage.width(),
     height: 180,
     fill: '#088F8F',
-    
+
 });
 layer.add(navBar_drop);
 
@@ -334,7 +337,7 @@ var aban = new Konva.Group({
     scaleX:0.3,
     scaleY:0.3,
     // visibility: false,
-  
+
   });
   //vertical shape
   var aban1 = new Konva.Rect({
@@ -353,7 +356,7 @@ var aban = new Konva.Group({
     }
   });
 
-  
+
   //horizontal shape
   var aban2 = new Konva.Rect({
     x: 12,
@@ -375,7 +378,7 @@ var aban = new Konva.Group({
   aban7.x(51.5);
   aban7.y(35);
 
-  
+
   //vertical top
   var aban3 = new Konva.Rect({
     x: 68,
@@ -395,7 +398,7 @@ var aban = new Konva.Group({
   //vertical down
   const aban4 = aban3.clone();
   aban4.y(151.5);
-  
+
   //horizontal left
   const aban5 = aban4.clone();
   aban5.x(-3);
@@ -421,7 +424,7 @@ var adinkrahene = new Konva.Group({
     scaleY:0.3,
     // opacity: 0.5,
   });
-  
+
   //circle small
   var adi1 = new Konva.Circle({
     x: 455,
@@ -452,8 +455,8 @@ var abusua = new Konva.Group({
     scaleY: 0.2,
     // opacity: 0.5,
   });
-  
-  
+
+
   //square
   var abu1 = new Konva.Rect({
     x: 105,
@@ -490,7 +493,7 @@ abu11.y(278);
   //line2
   const abu3 = abu2.clone();
   abu3.points([155,203,155,303]);
-  
+
   //circle top
   var abu4 = new Konva.Circle({
     x: 155,
@@ -502,12 +505,12 @@ abu11.y(278);
   //circle down
   const abu5 = abu4.clone();
   abu5.y(303);
-  
+
   //circle left
   const abu6 = abu5.clone();
   abu6.x(105);
   abu6.y(253);
-  
+
   //circle right
   const abu7 = abu6.clone();
   abu7.x(205);
@@ -680,7 +683,7 @@ var agyin = new Konva.Group({
   });
 agyin.add(agyin1).add(agyin2).add(agyin3).add(agyin4).add(agyin5);
 shapes.push(agyin);
-layer.add(agyin);  
+layer.add(agyin);
 
 
 button_home.style.visibility = 'hidden';
@@ -827,7 +830,7 @@ var aban = new Konva.Group({
     draggable: true,
     scaleX:0.3,
     scaleY:0.3,
-  
+
   });
   //vertical shape
   var aban1 = new Konva.Rect({
@@ -846,7 +849,7 @@ var aban = new Konva.Group({
     }
   });
 
-  
+
   //horizontal shape
   var aban2 = new Konva.Rect({
     x: 12,
@@ -868,7 +871,7 @@ var aban = new Konva.Group({
   aban7.x(51.5);
   aban7.y(35);
 
-  
+
   //vertical top
   var aban3 = new Konva.Rect({
     x: 68,
@@ -888,7 +891,7 @@ var aban = new Konva.Group({
   //vertical down
   const aban4 = aban3.clone();
   aban4.y(151.5);
-  
+
   //horizontal left
   const aban5 = aban4.clone();
   aban5.x(-3);
@@ -914,7 +917,7 @@ var adinkrahene = new Konva.Group({
     scaleY:0.3,
     // opacity: 0.5,
   });
-  
+
   //circle small
   var adi1 = new Konva.Circle({
     x: 455,
@@ -945,8 +948,8 @@ var abusua = new Konva.Group({
     scaleY: 0.2,
     // opacity: 0.5,
   });
-  
-  
+
+
   //square
   var abu1 = new Konva.Rect({
     x: 105,
@@ -983,7 +986,7 @@ abu11.y(278);
   //line2
   const abu3 = abu2.clone();
   abu3.points([155,203,155,303]);
-  
+
   //circle top
   var abu4 = new Konva.Circle({
     x: 155,
@@ -995,12 +998,12 @@ abu11.y(278);
   //circle down
   const abu5 = abu4.clone();
   abu5.y(303);
-  
+
   //circle left
   const abu6 = abu5.clone();
   abu6.x(105);
   abu6.y(253);
-  
+
   //circle right
   const abu7 = abu6.clone();
   abu7.x(205);
@@ -1173,7 +1176,7 @@ var agyin = new Konva.Group({
   });
 agyin.add(agyin1).add(agyin2).add(agyin3).add(agyin4).add(agyin5);
 shapes.push(agyin);
-layer.add(agyin);  
+layer.add(agyin);
 
 //akofena
 var akofena = new Konva.Group({
@@ -1192,8 +1195,8 @@ var akofena = new Konva.Group({
     stroke: 'white',
     strokeWidth: 1,
   });
-  
-  //rect left 
+
+  //rect left
   var akofena2 = new Konva.Rect({
     x: 1012.5,
     y: 482,
@@ -1230,8 +1233,8 @@ var akofena = new Konva.Group({
   akofena5.radius(5);
    //circle in rod 2
   const akofena6 = akofena5.clone();
-  akofena6.y(400); 
-  
+  akofena6.y(400);
+
 akofena.add(akofena1).add(akofena2).add(akofena3).add(akofena4).add(akofena5).add(akofena6);
 shapes.push(akofena);
 layer.add(akofena);
@@ -1292,7 +1295,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  });  
+  });
 
   var aya4 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1307,7 +1310,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
 
   var aya5 = new Konva.Shape({
@@ -1323,7 +1326,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
   var aya6 = new Konva.Shape({
     sceneFunc: function (context, shape) {
       context.beginPath();
@@ -1337,7 +1340,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   //left
   var aya7 = new Konva.Shape({
@@ -1353,7 +1356,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   var aya8 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1368,7 +1371,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   var aya9 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1383,7 +1386,7 @@ var aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   aya.add(aya1).add(aya2).add(aya3).add(aya4).add(aya5).add(aya6).add(aya7).add(aya8).add(aya9);
   shapes.push(aya);
@@ -1416,7 +1419,7 @@ var a_aban = new Konva.Group({
     }
   });
 
-  
+
   //horizontal shape
   var a_aban2 = new Konva.Rect({
     x: 12,
@@ -1438,7 +1441,7 @@ var a_aban = new Konva.Group({
   a_aban7.x(51.5);
   a_aban7.y(35);
 
-  
+
   //vertical top
   var a_aban3 = new Konva.Rect({
     x: 68,
@@ -1458,7 +1461,7 @@ var a_aban = new Konva.Group({
   //vertical down
   const a_aban4 = a_aban3.clone();
   a_aban4.y(151.5);
-  
+
   //horizontal left
   const a_aban5 = a_aban4.clone();
   a_aban5.x(-3);
@@ -1481,7 +1484,7 @@ var a_adinkrahene = new Konva.Group({
     scaleX:0.3,
     scaleY:0.3,
   });
-  
+
   //circle small
   var a_adi1 = new Konva.Circle({
     x: 455,
@@ -1512,8 +1515,8 @@ var a_abusua = new Konva.Group({
     scaleX: 0.2,
     scaleY: 0.2,
   });
-  
-  
+
+
   //square
   var a_abu1 = new Konva.Rect({
     x: 105,
@@ -1549,7 +1552,7 @@ a_abu11.y(278);
   //line2
   const a_abu3 = a_abu2.clone();
   a_abu3.points([155,203,155,303]);
-  
+
   //circle top
   var a_abu4 = new Konva.Circle({
     x: 155,
@@ -1561,12 +1564,12 @@ a_abu11.y(278);
   //circle down
   const a_abu5 = a_abu4.clone();
   a_abu5.y(303);
-  
+
   //circle left
   const a_abu6 = a_abu5.clone();
   a_abu6.x(105);
   a_abu6.y(253);
-  
+
   //circle right
   const a_abu7 = a_abu6.clone();
   a_abu7.x(205);
@@ -1575,7 +1578,7 @@ a_abu11.y(278);
   shapes.push(a_abusua);
   layer.add(a_abusua);
 
-  
+
 //a_adwo
 var a_adwo = new Konva.Group({
     x: -158+navBar_4.width()-30+navBar_4.x(),
@@ -1679,7 +1682,7 @@ var a_adwo1 = new Konva.Ellipse({
 a_agyin.add(a_agyin1).add(a_agyin2).add(a_agyin3).add(a_agyin4).add(a_agyin5);
 shapes.push(a_agyin);
 
-layer.add(a_agyin);  
+layer.add(a_agyin);
 
 //a_akofena
 var a_akofena = new Konva.Group({
@@ -1697,8 +1700,8 @@ var a_akofena = new Konva.Group({
     stroke: 'white',
     strokeWidth: 1,
   });
-  
-  //rect left 
+
+  //rect left
   var a_akofena2 = new Konva.Rect({
     x: 1012.5,
     y: 482,
@@ -1735,8 +1738,8 @@ var a_akofena = new Konva.Group({
   a_akofena5.radius(5);
    //circle in rod 2
   const a_akofena6 = a_akofena5.clone();
-  a_akofena6.y(400); 
-  
+  a_akofena6.y(400);
+
 a_akofena.add(a_akofena1).add(a_akofena2).add(a_akofena3).add(a_akofena4).add(a_akofena5).add(a_akofena6);
 shapes.push(a_akofena);
 
@@ -1799,7 +1802,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  });  
+  });
 
   var a_aya4 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1814,7 +1817,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
 
   var a_aya5 = new Konva.Shape({
@@ -1830,7 +1833,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
   var a_aya6 = new Konva.Shape({
     sceneFunc: function (context, shape) {
       context.beginPath();
@@ -1844,7 +1847,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   //left
   var a_aya7 = new Konva.Shape({
@@ -1860,7 +1863,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   var a_aya8 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1875,7 +1878,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   var a_aya9 = new Konva.Shape({
     sceneFunc: function (context, shape) {
@@ -1890,7 +1893,7 @@ var a_aya1 = new Konva.Shape({
     //fill: 'white',
     stroke: 'white',
     strokeWidth: 1,
-  }); 
+  });
 
   a_aya.add(a_aya1).add(a_aya2).add(a_aya3).add(a_aya4).add(a_aya5).add(a_aya6).add(a_aya7).add(a_aya8).add(a_aya9);
   shapes.push(a_aya);
@@ -1924,7 +1927,7 @@ var a_a_aban = new Konva.Group({
     }
   });
 
-  
+
   //horizontal shape
   var a_a_aban2 = new Konva.Rect({
     x: 12,
@@ -1946,7 +1949,7 @@ var a_a_aban = new Konva.Group({
   a_a_aban7.x(51.5);
   a_a_aban7.y(35);
 
-  
+
   //vertical top
   var a_a_aban3 = new Konva.Rect({
     x: 68,
@@ -1966,7 +1969,7 @@ var a_a_aban = new Konva.Group({
   //vertical down
   const a_a_aban4 = a_a_aban3.clone();
   a_a_aban4.y(151.5);
-  
+
   //horizontal left
   const a_a_aban5 = a_a_aban4.clone();
   a_a_aban5.x(-3);
@@ -1988,7 +1991,7 @@ var a_a_adinkrahene = new Konva.Group({
     scaleX:0.3,
     scaleY:0.3,
   });
-  
+
   //circle small
   var a_a_adi1 = new Konva.Circle({
     x: 455,
@@ -2019,8 +2022,8 @@ var a_a_abusua = new Konva.Group({
     scaleX: 0.2,
     scaleY: 0.2,
   });
-  
-  
+
+
   //square
   var a_a_abu1 = new Konva.Rect({
     x: 105,
@@ -2056,7 +2059,7 @@ a_a_abu11.y(278);
   //line2
   const a_a_abu3 = a_a_abu2.clone();
   a_a_abu3.points([155,203,155,303]);
-  
+
   //circle top
   var a_a_abu4 = new Konva.Circle({
     x: 155,
@@ -2068,12 +2071,12 @@ a_a_abu11.y(278);
   //circle down
   const a_a_abu5 = a_a_abu4.clone();
   a_a_abu5.y(303);
-  
+
   //circle left
   const a_a_abu6 = a_a_abu5.clone();
   a_a_abu6.x(105);
   a_a_abu6.y(253);
-  
+
   //circle right
   const a_a_abu7 = a_a_abu6.clone();
   a_a_abu7.x(205);
@@ -2419,7 +2422,7 @@ a_a_abu11.y(278);
 // a_a_agyin.add(a_a_agyin1).add(a_a_agyin2).add(a_a_agyin3).add(a_a_agyin4).add(a_a_agyin5);
 // shapes.push(a_a_agyin);
 
-// layer.add(a_a_agyin);  
+// layer.add(a_a_agyin);
 
 // //a_a_akofena
 // var a_a_akofena = new Konva.Group({
@@ -2437,8 +2440,8 @@ a_a_abu11.y(278);
 //     stroke: 'white',
 //     strokeWidth: 1,
 //   });
-  
-//   //rect left 
+
+//   //rect left
 //   var a_a_akofena2 = new Konva.Rect({
 //     x: 1012.5,
 //     y: 482,
@@ -2475,8 +2478,8 @@ a_a_abu11.y(278);
 //   a_a_akofena5.radius(5);
 //    //circle in rod 2
 //   const a_a_akofena6 = a_a_akofena5.clone();
-//   a_a_akofena6.y(400); 
-  
+//   a_a_akofena6.y(400);
+
 // a_a_akofena.add(a_a_akofena1).add(a_a_akofena2).add(a_a_akofena3).add(a_a_akofena4).add(a_a_akofena5).add(a_a_akofena6);
 // shapes.push(a_a_akofena);
 
@@ -2538,7 +2541,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   });  
+//   });
 
 //   var a_a_aya4 = new Konva.Shape({
 //     sceneFunc: function (context, shape) {
@@ -2553,7 +2556,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 
 
 //   var a_a_aya5 = new Konva.Shape({
@@ -2569,7 +2572,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 //   var a_a_aya6 = new Konva.Shape({
 //     sceneFunc: function (context, shape) {
 //       context.beginPath();
@@ -2583,7 +2586,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 
 //   //left
 //   var a_a_aya7 = new Konva.Shape({
@@ -2599,7 +2602,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 
 //   var a_a_aya8 = new Konva.Shape({
 //     sceneFunc: function (context, shape) {
@@ -2614,7 +2617,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 
 //   var a_a_aya9 = new Konva.Shape({
 //     sceneFunc: function (context, shape) {
@@ -2629,7 +2632,7 @@ a_a_abu11.y(278);
 //     //fill: 'white',
 //     stroke: 'white',
 //     strokeWidth: 1,
-//   }); 
+//   });
 
 //   a_a_aya.add(a_a_aya1).add(a_a_aya2).add(a_a_aya3).add(a_a_aya4).add(a_a_aya5).add(a_a_aya6).add(a_a_aya7).add(a_a_aya8).add(a_a_aya9);
 //   shapes.push(a_a_aya);
@@ -2663,7 +2666,7 @@ a_a_abu11.y(278);
 //     }
 //   });
 
-  
+
 //   //horizontal shape
 //   var a_a_a_aban2 = new Konva.Rect({
 //     x: 12,
@@ -2685,7 +2688,7 @@ a_a_abu11.y(278);
 //   a_a_a_aban7.x(51.5);
 //   a_a_a_aban7.y(35);
 
-  
+
 //   //vertical top
 //   var a_a_a_aban3 = new Konva.Rect({
 //     x: 68,
@@ -2705,7 +2708,7 @@ a_a_abu11.y(278);
 //   //vertical down
 //   const a_a_a_aban4 = a_a_a_aban3.clone();
 //   a_a_a_aban4.y(151.5);
-  
+
 //   //horizontal left
 //   const a_a_a_aban5 = a_a_a_aban4.clone();
 //   a_a_a_aban5.x(-3);
@@ -2730,7 +2733,7 @@ a_a_abu11.y(278);
 //     scaleX:0.3,
 //     scaleY:0.3,
 //   });
-  
+
 //   //circle small
 //   var a_a_a_adi1 = new Konva.Circle({
 //     x: 455,
@@ -2760,8 +2763,8 @@ a_a_abu11.y(278);
 //     scaleX: 0.2,
 //     scaleY: 0.2,
 //   });
-  
-  
+
+
 //   //square
 //   var a_a_a_abu1 = new Konva.Rect({
 //     x: 105,
@@ -2797,7 +2800,7 @@ a_a_abu11.y(278);
 //   //line2
 //   const a_a_a_abu3 = a_a_a_abu2.clone();
 //   a_a_a_abu3.points([155,203,155,303]);
-  
+
 //   //circle top
 //   var a_a_a_abu4 = new Konva.Circle({
 //     x: 155,
@@ -2809,12 +2812,12 @@ a_a_abu11.y(278);
 //   //circle down
 //   const a_a_a_abu5 = a_a_a_abu4.clone();
 //   a_a_a_abu5.y(303);
-  
+
 //   //circle left
 //   const a_a_a_abu6 = a_a_a_abu5.clone();
 //   a_a_a_abu6.x(105);
 //   a_a_a_abu6.y(253);
-  
+
 //   //circle right
 //   const a_a_a_abu7 = a_a_a_abu6.clone();
 //   a_a_a_abu7.x(205);
@@ -2859,7 +2862,7 @@ a_a_abu11.y(278);
 
 
 
-      
+
 
       // animationend
       // function hideShapesWithinWidth() {
