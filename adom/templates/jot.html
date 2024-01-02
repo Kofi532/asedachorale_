@@ -40,35 +40,42 @@
     <div id="afriq-container">
     <div id="konva-container"></div>
           <div class="navigation" id="button-container">
-            <a href="/"><button style=" height: 30px;" id="myButtonHome" class="{% if request.path == '/' %}active{% endif %}"><b>M.H.B</b></button></a>
-            <a href="#"><button style="width: 80px; height: 30px;" id="myButtonAbout" class="{% if request.path == '/about/' %}active{% endif %}"><b>ANTHEMS</b></button></a>
+            <a href="/mhb/"><button style=" height: 30px;" id="myButtonHome" class="{% if request.path == '/' %}active{% endif %}"><b>M.H.B</b></button></a>
+            <a href="/anglican/"><button style="width: 80px; height: 30px;" id="myButtonAbout" class="{% if request.path == '/anglican/' %}active{% endif %}"><b>ANGLICAN</b></button></a>
             <a href="#"><button class="{% if request.path == '/gallery/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonGallery"><b>#</b></button></a>            
             <a href="#"><button class="{% if request.path == '/faq/' %}active{% endif %}" style="width: 80px; height: 30px;" id="myButtonFAQ"><b>#</b></button></a>
             <a href="#"><button style="width: 80px; height: 30px;" id="myButtonContact" class="{% if request.path == '/contact/' %}active{% endif %}"><b>#</b></button></a>
-            <a href="#"><button style="width: 80px; height: 30px;" id="myButtonProfile" class="{% if request.path == '/profile/' %}active{% endif %}"><b>CONTACT US</b></button></a>       
+            <a href="/contact/"><button style="width: 80px; height: 30px;" id="myButtonProfile" class="{% if request.path == '/profile/' %}active{% endif %}"><b>CONTACT US</b></button></a>       
           </div>  
 <div id="button-container">
-  <a href="/"></a>
+  <a href="/mhb/"></a>
   <button style="width: 80px; height: 30px;" id="myButtonHide"></button>
-  <a href="/"><button id="myDropHome">M.H.B</button></a>
-  <a href="#"><button id="myDropAbout">ANTHEMS</button></a>
+  <a href="/mhb/"><button id="myDropHome">M.H.B</button></a>
+  <a href="/anglican/"><button id="myDropAbout">ANGLICAN</button></a>
   <a href="#"><button id="myDropGallery">#</button></a>
   <a href="#"><button id="myDropFaq">#</button></a>
   <a href="#"><button id="myDropContact">#</button></a>
-  <a href="#"><button id="myDropProfile">CONTACT</button></a>
+  <a href="/contact/"><button id="myDropProfile">CONTACT</button></a>
 
 
 </div>
   </div>
   <main id="workafriq">
-    <br><br>
-    {% if clicked_value %}
-    <midi-player src="{% url 'download_midi' %}" sound-font></midi-player>
-{% endif %}
+<br><br>
 
-    {% block content %}{% endblock %}
+<div class="container">
+  {% if clicked_value %}
+<div>
+  <midi-player src="{% url 'download_midi' %}" id="midiPlayer" sound-font></midi-player>
+</div>{% endif %}
+  {% block content %}
+  {% endblock %}
+</div>
+
   </main>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.22.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
 
     <script>
       var width = window.innerWidth;
@@ -254,75 +261,6 @@ if (window.innerWidth < 980) {
     
 });
 layer.add(navBar_drop);
-
-// Create an image
-// const imageObj = new Image();
-// imageObj.src = "{% static '/fa-bars.png' %}"; // Replace with your image path
-// imageObj.onload = () => {
-//     const image = new Konva.Image({
-//           x: width*0.8,
-//           y: 0,
-//           image: imageObj,
-//           width: 50,
-//           height: 50,
-//           shadowColor: 'white',
-//           shadowBlur: 10, // Blur radius
-//           shadowOffset: { x: 5, y: 5 }, // Shadow offset
-//           shadowOpacity: 1, // Shadow opacity
-//     });
-
-//     // Add the image to the layer
-//     layer.add(image);
-
-//     // Draw the layer
-//     layer.draw();
-
-// let isDown = true;
-
-// // Event listener for circle click
-// image.on('click', () => {
-//     if (isDown) {
-// stage.height(200);
-//       const dropdown = new Konva.Rect({
-//             x: 0,
-//             y: 50,
-//             width: stage.width(),
-//             height: stage.height(),
-//             fill: 'white',
-//         });
-//         layer.add(dropdown);
-// // Define text labels
-// const labels = ['Home', 'Gallery', 'About', 'Contact'];
-
-// // Create and position text elements vertically
-// const lineHeight = 40; // Adjust the line height
-// const initialY = 60; // Adjust the starting Y position
-// const x = 20; // X position for all labels
-
-// labels.forEach((label, index) => {
-//     const text = new Konva.Text({
-//         x: x,
-//         y: initialY + index * lineHeight,
-//         text: label,
-//         fontSize: 16,
-//         fill: 'white',
-//     });
-
-//     layer.add(text);
-// });
-
-//     } else {
-//       stage.height(50);
-//         // Change the circle color to red
-//     }
-
-//     // Toggle the color state
-//     isDown = !isDown;
-
-//     // Redraw the layer to reflect the color change
-//     layer.draw();
-// });
-// };
 var aban = new Konva.Group({
     x: 0+navBar_1.width()/2+navBar_1.x(),
     y: -10,
@@ -745,26 +683,6 @@ drop_faq.style.display = 'none';
 drop_gallery.style.display = 'none';
 drop_profile.style.display = 'none';
 
-  //nav
-// Create a text element
-// var text1 = new Konva.Text({
-//     x: navBar_1.x()+(navBar_1.width() / 2) , // Center the text horizontally in the shape
-//     y: navBar_1.y()+(navBar_1.height() / 2) , // Center the text vertically in the shape
-//     text: 'HOME', // Set the text content
-//     fontSize: 15, // Set the font size
-//     fill: 'white', // Set the text color
-//     align: 'center', // Center align the text
-//     verticalAlign: 'middle', // Middle align the text
-//     fontStyle: 'bold',
-//     shadowColor: 'white',
-//     shadowBlur: 10,
-//     shadowOffsetX: 10,
-//     shadowOffsetY: 10,
-//     shadowOpacity: 0.2,
-// });
-// layer.add(text1);
-// text1.offsetX((text1.getTextWidth()) / 2);
-// text1.offsetY((text1.getTextHeight()) / 2);
 
 button_hide.style.visibility='hidden';
 

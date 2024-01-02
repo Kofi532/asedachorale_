@@ -11,7 +11,7 @@ import os
 from fuzzywuzzy import fuzz
 
 import fluidsynth
-from IPython.display import display, Audio
+# from IPython.display import display, Audio
 from midi2audio import FluidSynth
 from django.http import FileResponse
 from django.views import View
@@ -19,7 +19,10 @@ from pydub import AudioSegment
 import random
 import string
 from django.conf import settings
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8684bb76d43f77aa2b204a4561ed83509b1a395
 
 # from .models import NoteList
 
@@ -747,10 +750,10 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click(request):
+
     lists = list(range(1, 1001))
     directory = r"/home/kofi532/asedachorale/adom/templates/lyrics"
     kpo = []
-
     with os.scandir(directory) as entries:
         for entry in entries:
             if entry.is_file():
@@ -795,6 +798,18 @@ def handle_click(request):
     if value_to_retrieve is not None:
         clicked_value = value_to_retrieve
         request.session['clicked_value'] = clicked_value
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
+        # score.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
         return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
 
     if request.method == 'POST':
@@ -810,10 +825,11 @@ def handle_click(request):
             return ''.join(random.choice(letters) for _ in range(4))
 
         random_word = generate_random_word()
-        midi_file_path = f'C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\media\\{random_word}.mid'
+        midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
         # score.write('midi', fp=midi_file_path)
         request.session['random_word'] = random_word
         midi_messages = 1
+<<<<<<< HEAD
         try:
             path = f"C:\\Users\\KOFI ADUKPO\\Downloads\\tunes\\{clicked_value}.xml" 
             
@@ -822,6 +838,11 @@ def handle_click(request):
         except:
             return render(request, 'sorry.html', {'lists': lists})
 
+=======
+        path = f"/home/kofi532/asedachorale/adom/templates/tunes/{clicked_value}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+>>>>>>> c8684bb76d43f77aa2b204a4561ed83509b1a395
         return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
         # return render(request, 'lyricshtml', {'lists': lists})
         # return redirect('landing_page', value_one=first_value)
