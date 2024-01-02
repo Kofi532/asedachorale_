@@ -118,13 +118,25 @@ def handle_click_ang(request):
         request.session['random_word'] = random_word
         midi_messages = 1
         # try:
-        path = f"/home/kofi532/asedachorale/adom/templates/{clicked_value}.xml"
+        path = f"/adom/templates/tunes/{clicked_value}.xml"
 
         score = music21.converter.parse(path)
         score.write('midi', fp=midi_file_path)
         # except:
         #     return render(request, 'sorry.html', {'lists': lists})
         return render(request, 'lyrics_ang/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value, 'midi_messages':midi_messages})
+        try:
+            path = f"/adom/templates/tunes/{clicked_value}.xml"
+
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
+        except:
+            return render(request, 'sorry.html', {'lists': lists})
+        path = f"/adom/templates/tunes/{clicked_value}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+
+        return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
         # return render(request, 'lyricshtml', {'lists': lists})
         # return redirect('landing_page', value_one=first_value)
     return render(request, 'base_ang.html', {'lists': lists})
