@@ -39,7 +39,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click_ang(request):
     lists = list(range(1, 1001))
-    directory = r"adom\templates\lyrics_ang"
+    directory = r"/home/kofi532/asedachorale/adom/templates/lyrics_ang"
     kpo = []
 
     with os.scandir(directory) as entries:
@@ -118,7 +118,7 @@ def handle_click_ang(request):
         request.session['random_word'] = random_word
         midi_messages = 1
         # try:
-        path = f"/adom/templates/tunes/{clicked_value}.xml"
+        path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{clicked_value}.xml"
 
         score = music21.converter.parse(path)
         score.write('midi', fp=midi_file_path)
@@ -245,7 +245,7 @@ def search_hymn_ang (request):
         print(text_input_value)
 
 
-        directory_path = r"adom\templates\lyrics_ang"
+        directory_path = r"/home/kofi532/asedachorale/adom/templates/lyrics_ang"
 
         # Initialize an empty list to store file names
         kpo = []
