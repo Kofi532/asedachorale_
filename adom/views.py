@@ -1011,5 +1011,8 @@ def contact(request):
     return render(request, 'contact.html')
 
 def first(request):
-
     return render(request, 'first.html', {})
+
+
+def privacy(request):
+    return render(request, 'privacy.html')

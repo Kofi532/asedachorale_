@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('#', views.music_view, name='music_view'),
+    path('/', views.handle_click, name='handle_click'), 
     path('solfa/', views.handle_click, name='mistake1'),
     path('all/', views.index, name='index'),
     path('all/base.html/', views.base, name='base'),
@@ -17,9 +18,10 @@ urlpatterns = [
     path('download-midi/', views.download_midi, name='download_midi'),
     path('contact/', views.contact, name='contact'),
     path('', views.first, name='first'),
+    path('privacy/', views.privacy, name='privacy'), 
 
+    ]
 
-]
 # Serve media files during development
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
