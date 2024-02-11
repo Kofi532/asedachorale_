@@ -1204,3 +1204,38 @@ def first(request):
 
 def privacy(request):
     return render(request, 'privacy.html')
+
+def anthems(request):
+    return render(request, 'search_anthems.html')
+
+def armah(request):
+    directory = r'adom\templates\anthems_lyrics'
+    file_names = [filename[:-5] for filename in os.listdir(directory) if filename.endswith('.html')]
+    if request.method == 'POST':
+        clicked_value = request.POST.get('num')  # Extract the value of the clicked button
+        # return JsonResponse({'status': 'success'})
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path = f'media\{random_word}.mid'
+        # score.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        path = f"adom\templates\tunes_anthems\{clicked_value}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+        # return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
+        clicked_value=clicked_value.upper()
+        return render(request, 'anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
+
+    return render(request, 'armah.html', {'file_names': file_names})
+
+
+def armah_songs(request):
+    # clicked_value = ''
+    # request.session['clicked_value'] = clicked_value
+    clicked_value = request.session.get('clicked_value', None)
+    return render(request, 'anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
+
