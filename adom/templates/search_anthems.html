@@ -1,0 +1,33 @@
+{% extends 'jot.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <br><br>
+        <form method="post" action="#">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="text_input">Enter name of composer or first line of anthem:</label>
+                <input type="text" class="form-control" id="text_input" name="text_input">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+
+        {% for i, j in mylist %}
+            <div class="card">
+                <div class="card-body">
+                    <a href="{% url 'handle_click_ang' %}?value_to_pass={{i}}" class="card-link"> {{i}}</a><br>
+                    <p>{{j}}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+        <!-- Clickable List -->
+        <div class="list-group mt-3">
+            <a href="{% url 'armah' %}" class="list-group-item list-group-item-action">Varrick Armah</a>
+            <!-- <a href="#" class="list-group-item list-group-item-action">Item 2</a>
+            <a href="#" class="list-group-item list-group-item-action">Item 3</a> -->
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+{% endblock %}
