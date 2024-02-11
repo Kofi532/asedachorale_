@@ -1,0 +1,32 @@
+{% extends 'jot.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+    <div class="container">
+        <br><br>
+        <form method="post" action="{% url 'search_hymn_presby' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="text_input">Enter first line of hymn:</label>
+                <input type="text" class="form-control" id="text_input" name="text_input">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+
+        {% for i, j in mylist %}
+            <div class="card">
+                <div class="card-body">
+                    <a href="{% url 'handle_click_presby' %}?value_to_pass={{i}}" class="card-link">P.H.B {{i}}</a><br>
+                    <p>{{j}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

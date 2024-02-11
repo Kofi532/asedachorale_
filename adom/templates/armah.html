@@ -1,0 +1,19 @@
+
+
+{% extends 'jot.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1 class="mt-5 mb-4">Varrick Armah</h1>
+    <form method="post" action="{% url 'armah' %}">
+        {% csrf_token %}
+        <ul class="list-group">
+            {% for file_name in file_names %}
+                <li class="list-group-item">
+                    <button type="submit" name="num" value="{{ file_name }}" class="btn btn-link">{{ file_name }}</button>
+                </li>
+            {% endfor %}
+        </ul>
+    </form>
+</div>
+{% endblock %}
