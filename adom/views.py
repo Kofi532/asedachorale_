@@ -119,17 +119,17 @@ def handle_click_presby(request):
             request.session['random_word'] = random_word
             midi_messages = 1
             # try:
-            path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{clicked_value}.xml"
+            # path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{clicked_value}.xml"
 
-            score = music21.converter.parse(path)
-            score.write('midi', fp=midi_file_path)
+            # score = music21.converter.parse(path)
+            # score.write('midi', fp=midi_file_path)
 
             # except:
             #     return render(request, 'sorry.html', {'lists': lists})
-            return render(request, '/home/kofi532/asedachorale/lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value, 'midi_messages':midi_messages})
+            return render(request, '/home/kofi532/asedachorale/adom/templates/lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value, 'midi_messages':midi_messages})
             # return render(request, 'lyricshtml', {'lists': lists})
             # return redirect('landing_page', value_one=first_value)
-        return render(request, '/home/kofi532/asedachorale/base_presby.html', {'lists': lists})
+        return render(request, '/home/kofi532/asedachorale/adom/templates/base_presby.html', {'lists': lists})
     except:
         return render(request, 'sorry.html', {})
     # return redirect('landing_page') + f'?value_one={first_value}'
