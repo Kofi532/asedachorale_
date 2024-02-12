@@ -34,102 +34,104 @@ def base(request):
     return render(request, 'lyrics/2.html')
 
 
-from django.views.decorators.csrf import csrf_exempt
+
 @csrf_exempt  # Only for demonstration purposes, not recommended for production
 def handle_click_presby(request):
-    lists = list(range(1, 1001))
-    directory = r"adom\templates\lyrics_presby"
-    kpo = []
+    try:
+        lists = list(range(1, 1001))
+        directory = r"/home/kofi532/asedachorale/adom/templates/lyrics_presby"
+        kpo = []
 
-    with os.scandir(directory) as entries:
-        for entry in entries:
-            if entry.is_file():
-                kpo.append(entry.name)
-    file_list = kpo
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                if entry.is_file():
+                    kpo.append(entry.name)
+        file_list = kpo
 
-    # Remove '.html' from each element in the list
-    file_list = [file_name.replace('.html', '') for file_name in file_list]
-    def rearrange_list(input_list):
-        def extract_integer(s):
-            # Extracts the integer part from the string
-            num = ''
-            for char in s:
-                if char.isdigit():
-                    num += char
-                else:
-                    break
-            return int(num) if num else None
+        # Remove '.html' from each element in the list
+        file_list = [file_name.replace('.html', '') for file_name in file_list]
+        def rearrange_list(input_list):
+            def extract_integer(s):
+                # Extracts the integer part from the string
+                num = ''
+                for char in s:
+                    if char.isdigit():
+                        num += char
+                    else:
+                        break
+                return int(num) if num else None
 
-        # Custom sorting function based on extracted integers
-        def sort_key(elem):
-            return extract_integer(elem)
+            # Custom sorting function based on extracted integers
+            def sort_key(elem):
+                return extract_integer(elem)
 
-        # Sort the list based on extracted integers
-        sorted_list = sorted(input_list, key=sort_key)
-        return sorted_list
+            # Sort the list based on extracted integers
+            sorted_list = sorted(input_list, key=sort_key)
+            return sorted_list
 
-    # Example list
-    original_list = file_list
+        # Example list
+        original_list = file_list
 
-    # Rearrange the list
-    rearranged_list = rearrange_list(original_list)
-    lists = rearranged_list
-    with os.scandir(directory) as entries:
-        for entry in entries:
-            if entry.is_file():
-                kpo.append(entry.name)
+        # Rearrange the list
+        rearranged_list = rearrange_list(original_list)
+        lists = rearranged_list
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                if entry.is_file():
+                    kpo.append(entry.name)
 
-    value_to_retrieve = request.GET.get('value_to_pass', None)
-    print('hard')
-    print(value_to_retrieve)
-    if value_to_retrieve is not None:
-        clicked_value = value_to_retrieve
-        request.session['clicked_value'] = clicked_value
-        # return JsonResponse({'status': 'success'})
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
+        value_to_retrieve = request.GET.get('value_to_pass', None)
+        print('hard')
+        print(value_to_retrieve)
+        if value_to_retrieve is not None:
+            clicked_value = value_to_retrieve
+            request.session['clicked_value'] = clicked_value
+            # return JsonResponse({'status': 'success'})
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-        random_word = generate_random_word()
-        midi_file_path = f'aseda\media\{random_word}.mid'
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        path = f"adom\templates\tunes_ang\{clicked_value}.xml"
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
+            random_word = generate_random_word()
+            midi_file_path = f'/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+            # score.write('midi', fp=midi_file_path)
+            request.session['random_word'] = random_word
+            midi_messages = 1
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{clicked_value}.xml"
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
 
-        return render(request, 'lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
+            return render(request, '/home/kofi532/asedachorale/lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
 
-    if request.method == 'POST':
-        clicked_value = request.POST.get('num')
-        request.session['clicked_value'] = clicked_value
-        print(clicked_value)  # For demonstration, you can use this value as needed
+        if request.method == 'POST':
+            clicked_value = request.POST.get('num')
+            request.session['clicked_value'] = clicked_value
+            print(clicked_value)  # For demonstration, you can use this value as needed
 
 
-        # return JsonResponse({'status': 'success'})
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
+            # return JsonResponse({'status': 'success'})
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-        random_word = generate_random_word()
-        midi_file_path = f'aseda\media\{random_word}.mid'
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1 
-        # try:
-        path = f"adom\templates\tunes_ang\{clicked_value}.xml"
-        
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
+            random_word = generate_random_word()
+            midi_file_path = f'/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+            # score.write('midi', fp=midi_file_path)
+            request.session['random_word'] = random_word
+            midi_messages = 1
+            # try:
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{clicked_value}.xml"
 
-        # except:
-        #     return render(request, 'sorry.html', {'lists': lists})
-        return render(request, 'lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value, 'midi_messages':midi_messages})
-        # return render(request, 'lyricshtml', {'lists': lists})
-        # return redirect('landing_page', value_one=first_value)
-    return render(request, 'base_presby.html', {'lists': lists})
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
 
+            # except:
+            #     return render(request, 'sorry.html', {'lists': lists})
+            return render(request, '/home/kofi532/asedachorale/lyrics_presby/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value, 'midi_messages':midi_messages})
+            # return render(request, 'lyricshtml', {'lists': lists})
+            # return redirect('landing_page', value_one=first_value)
+        return render(request, '/home/kofi532/asedachorale/base_presby.html', {'lists': lists})
+    except:
+        return render(request, 'sorry.html', {})
     # return redirect('landing_page') + f'?value_one={first_value}'
 
 
@@ -337,94 +339,96 @@ def handle_click(request):
 
 
 def search_hymn_presby (request):
-    if request.method == 'POST':
-        text_input_value = request.POST.get('text_input', '')
-        # Process the text_input_value as needed
-        print(text_input_value)
-        
-
-        directory_path = r"adom\templates\lyrics_presby"
-
-        # Initialize an empty list to store file names
-        kpo = []
-
-        # Check if the directory exists
-        if os.path.exists(directory_path) and os.path.isdir(directory_path):
-            # Iterate through the files in the directory
-            for filename in os.listdir(directory_path):
-                # Append the file name to the 'kpo' list
-                kpo.append(filename)
-
-        carry = kpo.copy()
-        # List all files in the directory
-        file_list = os.listdir(directory_path)
-        hymn_list = []
-        # Loop through each file
-        for file_name in file_list:
-            # Check if the file is an HTML file
-            if file_name.endswith(".html"):
-                file_path = os.path.join(directory_path, file_name)
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    # Read all lines into a list
-                    lines = file.readlines()
+    try:
+        if request.method == 'POST':
+            text_input_value = request.POST.get('text_input', '')
+            # Process the text_input_value as needed
+            print(text_input_value)
 
 
-                    # Print the content of line 6 (index 5 since Python uses zero-based indexing)
-                    # if len(lines) >= 6:
-                    if len(lines) >= 1:
-                        with open(file_path, 'r', encoding='utf-8') as file:
-                            html_content = file.read()
-                            html_content = html_content[125:]
-                            # print(html_content)
-                        # print(lines[5])
-                            # Remove '<br>', '<p>', and '</p>' from the string
-                            cleaned_string = html_content.replace('<br/>', '').replace('<p>', '').replace('</p>', '').replace('<br>', '')
-                            hymn_list.append(cleaned_string)
+            directory_path = r"adom\templates\lyrics_presby"
 
-                        # print(cleaned_string)
-                    else:
-                        hymn_list.append(None)
-                        # print("The file does not have at least 6 lines.")
-        cut_hymn = []
-        for item in hymn_list:
-            # Split the string into words
-            if item == None:
-                cut_hymn.append(None)
-            if len(str(item)) < 10:
-                cut_hymn.append(None)
+            # Initialize an empty list to store file names
+            kpo = []
 
-            if len(str(item))> 10:
-                words = item.split()
-                
-                first_10_words = ' '.join(words[:70])
-                cut_hymn.append(first_10_words)
-        b = cut_hymn
+            # Check if the directory exists
+            if os.path.exists(directory_path) and os.path.isdir(directory_path):
+                # Iterate through the files in the directory
+                for filename in os.listdir(directory_path):
+                    # Append the file name to the 'kpo' list
+                    kpo.append(filename)
 
-        target_string = text_input_value
+            carry = kpo.copy()
+            # List all files in the directory
+            file_list = os.listdir(directory_path)
+            hymn_list = []
+            # Loop through each file
+            for file_name in file_list:
+                # Check if the file is an HTML file
+                if file_name.endswith(".html"):
+                    file_path = os.path.join(directory_path, file_name)
+                    with open(file_path, 'r', encoding='utf-8') as file:
+                        # Read all lines into a list
+                        lines = file.readlines()
 
-        # Calculate fuzz ratios for all items in the list
-        ratios = [fuzz.ratio(item, target_string) for item in b]
 
-        # Find the top 5 indexes with the highest fuzz ratios
-        top_5_indexes = sorted(range(len(ratios)), key=lambda i: ratios[i], reverse=True)[:10]
-        result = [carry[i] for i in top_5_indexes]
-        result = [filename.replace('.html', '') for filename in result]
+                        # Print the content of line 6 (index 5 since Python uses zero-based indexing)
+                        # if len(lines) >= 6:
+                        if len(lines) >= 1:
+                            with open(file_path, 'r', encoding='utf-8') as file:
+                                html_content = file.read()
+                                html_content = html_content[125:]
+                                # print(html_content)
+                            # print(lines[5])
+                                # Remove '<br>', '<p>', and '</p>' from the string
+                                cleaned_string = html_content.replace('<br/>', '').replace('<p>', '').replace('</p>', '').replace('<br>', '')
+                                hymn_list.append(cleaned_string)
 
-        hymning = [cut_hymn[i] for i in top_5_indexes]
+                            # print(cleaned_string)
+                        else:
+                            hymn_list.append(None)
+                            # print("The file does not have at least 6 lines.")
+            cut_hymn = []
+            for item in hymn_list:
+                # Split the string into words
+                if item == None:
+                    cut_hymn.append(None)
+                if len(str(item)) < 10:
+                    cut_hymn.append(None)
+
+                if len(str(item))> 10:
+                    words = item.split()
+
+                    first_10_words = ' '.join(words[:70])
+                    cut_hymn.append(first_10_words)
+            b = cut_hymn
+
+            target_string = text_input_value
+
+            # Calculate fuzz ratios for all items in the list
+            ratios = [fuzz.ratio(item, target_string) for item in b]
+
+            # Find the top 5 indexes with the highest fuzz ratios
+            top_5_indexes = sorted(range(len(ratios)), key=lambda i: ratios[i], reverse=True)[:10]
+            result = [carry[i] for i in top_5_indexes]
+            result = [filename.replace('.html', '') for filename in result]
+
+            hymning = [cut_hymn[i] for i in top_5_indexes]
+            mylist = zip(result, hymning)
+            context = {
+                'mylist': mylist,
+            }
+            return render(request, 'search_presby.html',context)
+            # return HttpResponse(f'Text submitted: {result}')
+        result = []
+        hymning = []
         mylist = zip(result, hymning)
         context = {
             'mylist': mylist,
         }
         return render(request, 'search_presby.html',context)
-        # return HttpResponse(f'Text submitted: {result}')
-    result = []
-    hymning = []
-    mylist = zip(result, hymning)
-    context = {
-        'mylist': mylist,
-    }
-    return render(request, 'search_presby.html',context)
-
+    except:
+        return render(request, 'sorry.html', {})
 
 def search_hymn_ang (request):
     if request.method == 'POST':
@@ -1209,33 +1213,39 @@ def anthems(request):
     return render(request, 'search_anthems.html')
 
 def armah(request):
-    directory = r'adom\templates\anthems_lyrics'
-    file_names = [filename[:-5] for filename in os.listdir(directory) if filename.endswith('.html')]
-    if request.method == 'POST':
-        clicked_value = request.POST.get('num')  # Extract the value of the clicked button
-        # return JsonResponse({'status': 'success'})
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
+    try:
+        directory = r'/home/kofi532/asedachorale/adom/templates/anthems_lyrics'
+        file_names = [filename[:-5] for filename in os.listdir(directory) if filename.endswith('.html')]
+        if request.method == 'POST':
+            clicked_value = request.POST.get('num')  # Extract the value of the clicked button
+            # return JsonResponse({'status': 'success'})
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-        random_word = generate_random_word()
-        midi_file_path = f'media\{random_word}.mid'
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        path = f"adom\templates\tunes_anthems\{clicked_value}.xml"
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
-        # return render(request, 'lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
-        clicked_value=clicked_value.upper()
-        return render(request, 'anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
+            random_word = generate_random_word()
+            midi_file_path = f'/home/kofi532/asedachorale/media/{random_word}.mid'
+            # score.write('midi', fp=midi_file_path)
+            request.session['random_word'] = random_word
+            midi_messages = 1
+            clicked_value_ = clicked_value.replace('_', '-').lower()
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes_anthems/{clicked_value_}.xml"
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
+            # return render(request, '/home/kofi532/asedachorale/lyrics/'+str(clicked_value)+'.html', {'lists': lists, 'clicked_value':clicked_value})
+            clicked_value=clicked_value.upper()
 
-    return render(request, 'armah.html', {'file_names': file_names})
+            # clicked_value_ = replace_underscore_with_dash(clicked_value)
+            clicked_value_ = clicked_value.lower()
+            return render(request, '/home/kofi532/asedachorale/adom/templates/anthems_lyrics/'+str(clicked_value_)+'.html', {'clicked_value':clicked_value})
 
+        return render(request, 'armah.html', {'file_names': file_names})
+    except:
+        return render(request, 'sorry.html', {})
 
 def armah_songs(request):
     # clicked_value = ''
     # request.session['clicked_value'] = clicked_value
     clicked_value = request.session.get('clicked_value', None)
-    return render(request, 'anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
+    return render(request, '/home/kofi532/asedachorale/anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
 
