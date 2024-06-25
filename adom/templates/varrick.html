@@ -1,0 +1,70 @@
+{% extends 'jot.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .scrollable-hymn {
+        max-height: 300px;  /* Adjust the height as needed */
+        overflow-y: auto;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <form action="{% url 'display_hymn_anthem' %}" method="get">
+                        <div class="form-group">
+                            <label for="composer">Select composer:</label>
+                            <select class="form-control" id="composer" name="composer" onchange="this.form.submit()">
+                                <option value="">Select</option>
+                                <option value="armah" {% if selected_composer == "armah" %}selected{% endif %}>Varrick Armah</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-body">
+                    {% if error_message %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ error_message }}
+                        </div>
+                    {% endif %}
+                    
+                    {% if selected_composer %}
+                        <form action="{% url 'display_hymn_anthem' %}" method="get">
+                            <div class="form-group">
+                                <label for="hymn_number">Enter lyrics of anthem:</label>
+                                <input type="text" class="form-control" id="hymn_number" name="hymn_number" value="{{ hymn_number }}">
+                                <input type="hidden" name="composer" value="{{ selected_composer }}">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                        
+                        <hr>
+                        
+                        {% if hymn_data %}
+                            <div class="card">
+                                <div class="card-body scrollable-hymn">
+                                    {{ hymn_data|safe }}
+                                </div>
+                            </div>
+                        {% endif %}
+                        
+                        <div class="mt-4">
+                            <label class="mb-2">Select an anthem:</label><br>
+                            {% for number in hymn_numbers %}
+                                <form action="{% url 'display_hymn_anthem' %}" method="get" style="display: inline;">
+                                    <input type="hidden" name="hymn_number" value="{{ number }}">
+                                    <input type="hidden" name="composer" value="{{ selected_composer }}">
+                                    <button type="submit" class="btn btn-outline-secondary mr-2 mb-2">{{ number }}</button>
+                                </form>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

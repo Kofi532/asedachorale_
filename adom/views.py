@@ -1249,3 +1249,359 @@ def armah_songs(request):
     clicked_value = request.session.get('clicked_value', None)
     return render(request, '/home/kofi532/asedachorale/anthems_lyrics/'+str(clicked_value)+'.html', {'clicked_value':clicked_value})
 
+
+
+
+def display_hymn_anthem(request):
+    selected_composer = request.GET.get('composer')
+    hymn_number = request.GET.get('hymn_number')
+    hymn_numbers = []
+    hymn_data = None
+    error_message = None
+
+    if selected_composer:
+        hymn_numbers = extract_html_file_names( r"/home/kofi532/asedachorale/adom/templates/anthems_lyrics")
+
+    if hymn_number:
+        random_word = generate_random_word()
+        midi_file_path =  r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+        request.session['random_word'] = random_word
+        path = r"/home/kofi532/asedachorale/adom/templates/tunes_anthems/{hymn_number}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+        hymn_data = fetch_hymn_from_file_anthem(hymn_number)
+        if hymn_data:
+            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+        else:
+            error_message = 'Hymn not found.'
+
+    return render(request, 'varrick.html', {
+        'hymn_data': hymn_data,
+        'hymn_numbers': hymn_numbers,
+        'selected_composer': selected_composer,
+        'error_message': error_message,
+        'hymn_number': hymn_number
+    })
+
+def extract_html_file_names(directory):
+    html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+    base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+
+    def custom_sort_key(name):
+        parts = re.split(r'(\d+)', name)
+        parts = [int(part) if part.isdigit() else part for part in parts]
+        return parts
+
+    sorted_base_names = sorted(base_names, key=custom_sort_key)
+    return sorted_base_names
+
+def generate_random_word():
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for _ in range(4))
+
+def fetch_hymn_from_file_anthem(hymn_number):
+    file_path =   r"/home/kofi532/asedachorale/adom/templates/armah.txt'
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            hymn_found = False
+            hymn_lines = []
+            current_stanza = []
+            for line in f:
+                stripped_line = line.strip()
+                if stripped_line == hymn_number:
+                    hymn_found = True
+                    hymn_lines.append(hymn_number)
+                elif hymn_found and stripped_line == '':
+                    break
+                elif hymn_found:
+                    current_stanza.append(stripped_line)
+
+            if current_stanza:
+                hymn_lines.append(' '.join(current_stanza).strip())
+
+            if hymn_lines:
+                formatted_hymn = '\n\n'.join([f'<p>{line}</p>' for line in hymn_lines])
+                return formatted_hymn
+            else:
+                return None
+    except UnicodeDecodeError as e:
+        print(f"Error reading the file: {e}")
+        return None
+
+
+def display_hymn_presby(request):
+    def extract_html_file_names(directory):
+        # List all files ending with .html
+        html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+
+        # Extract base names without extension
+        base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+
+        # Sort using a custom key
+        def custom_sort_key(name):
+            # Split into parts: numbers and non-numbers
+            parts = re.split(r'(\d+)', name)
+            # Convert numeric parts to integers for correct sorting
+            parts = [int(part) if part.isdigit() else part for part in parts]
+            return parts
+
+        sorted_base_names = sorted(base_names, key=custom_sort_key)
+        return sorted_base_names
+
+    # Example usage:
+    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics_presby'  # Replace with your directory path
+    html_files_list = extract_html_file_names(directory_path)
+    hymn_numbers = html_files_list  # Define the list of hymn numbers
+    hymn_number = request.GET.get('hymn_number')
+
+    if hymn_number:
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path = r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        # path =  r"/home/kofi532/asedachorale/adom/templates/tunes_presby/{hymn_number}.xml"
+        # score = music21.converter.parse(path)
+        # score.write('midi', fp=midi_file_path)
+        hymn_data = fetch_hymn_from_file_presby(hymn_number)
+        if hymn_data:
+            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+            aa = type(hymn_data)
+            # lol
+            return render(request, 'hymn_display_presby.html', {'hymn_data': hymn_data, 'hymn_numbers': hymn_numbers})
+        else:
+            return render(request, 'hymn_display_presby.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
+    else:
+        return render(request, 'hymn_display_presby.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+
+# def fetch_hymn_from_file_presby(hymn_number):
+#     file_path = "C:\\Users\\KOFI ADUKPO\\Desktop\\code\\aseda\\adom\\templates\\presby.txt"  # Adjust this path as per your file location
+#     with open(file_path, 'r') as f:
+#         hymn_found = False
+#         hymn_lines = []
+#         current_stanza = []
+#         for line in f:
+#             stripped_line = line.strip()
+#             if stripped_line == f'HYMN {hymn_number}':
+#                 hymn_found = True
+#                 hymn_lines.append(f'HYMN {hymn_number}')
+#             elif hymn_found and stripped_line.startswith('HYMN'):
+#                 break
+#             elif hymn_found:
+#                 if stripped_line and stripped_line[0].isdigit() and stripped_line[1] == ' ':
+#                     if current_stanza:
+#                         hymn_lines.append(' '.join(current_stanza).strip())
+#                         current_stanza = [stripped_line]
+#                     else:
+#                         current_stanza.append(stripped_line)
+#                 else:
+#                     current_stanza.append(stripped_line)
+#         if current_stanza:
+#             hymn_lines.append(' '.join(current_stanza).strip())
+
+#         if hymn_lines:
+#             formatted_hymn = '\n\n'.join([f'<p>{line}</p>' for line in hymn_lines])
+#             return formatted_hymn
+#         else:
+#             return None
+
+def fetch_hymn_from_file_presby(hymn_number):
+    file_path =  r"/home/kofi532/asedachorale/adom/templates/presby.txt" # Adjust this path as per your file location
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            hymn_found = False
+            hymn_lines = []
+            current_stanza = []
+            for line in f:
+                stripped_line = line.strip()
+                if stripped_line == f'HYMN {hymn_number}':
+                    hymn_found = True
+                    hymn_lines.append(f'HYMN {hymn_number}')
+                elif hymn_found and stripped_line.startswith('HYMN'):
+                    break
+                elif hymn_found:
+                    if stripped_line and stripped_line[0].isdigit() and stripped_line[1] == ' ':
+                        if current_stanza:
+                            hymn_lines.append(' '.join(current_stanza).strip())
+                            current_stanza = [stripped_line]
+                        else:
+                            current_stanza.append(stripped_line)
+                    else:
+                        current_stanza.append(stripped_line)
+            if current_stanza:
+                hymn_lines.append(' '.join(current_stanza).strip())
+
+            if hymn_lines:
+                formatted_hymn = '\n\n'.join([f'<p>{line}</p>' for line in hymn_lines])
+                return formatted_hymn
+            else:
+                return None
+    except UnicodeDecodeError as e:
+        print(f"Error reading the file: {e}")
+        return None
+
+
+def display_hymn(request):
+    def extract_html_file_names(directory):
+        # List all files ending with .html
+        html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+
+        # Extract base names without extension
+        base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+
+        # Sort using a custom key
+        def custom_sort_key(name):
+            # Split into parts: numbers and non-numbers
+            parts = re.split(r'(\d+)', name)
+            # Convert numeric parts to integers for correct sorting
+            parts = [int(part) if part.isdigit() else part for part in parts]
+            return parts
+
+        sorted_base_names = sorted(base_names, key=custom_sort_key)
+        return sorted_base_names
+
+    # Example usage:
+    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics" # Replace with your directory path
+    html_files_list = extract_html_file_names(directory_path)
+    hymn_numbers = html_files_list  # Define the list of hymn numbers
+    hymn_number = request.GET.get('hymn_number')
+
+    if hymn_number:
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path = r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'"
+        # score.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        path = r"/home/kofi532/asedachorale/adom/templates/tunes/{hymn_number}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+        hymn_data = fetch_hymn_from_file(hymn_number)
+        if hymn_data:
+            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+            aa = type(hymn_data)
+            # lol
+            return render(request, 'hymn_display.html', {'hymn_data': hymn_data, 'hymn_numbers': hymn_numbers})
+        else:
+            return render(request, 'hymn_display.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
+    else:
+        return render(request, 'hymn_display.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+
+def fetch_hymn_from_file(hymn_number):
+    file_path =   r"/home/kofi532/asedachorale/adom/templates/mbh.txt" # Adjust this path as per your file location
+    with open(file_path, 'r') as f:
+        hymn_found = False
+        hymn_lines = []
+        current_stanza = []
+        for line in f:
+            stripped_line = line.strip()
+            if stripped_line == f'HYMN {hymn_number}':
+                hymn_found = True
+                hymn_lines.append(f'HYMN {hymn_number}')
+            elif hymn_found and stripped_line.startswith('HYMN'):
+                break
+            elif hymn_found:
+                if stripped_line and stripped_line[0].isdigit() and stripped_line[1] == ' ':
+                    if current_stanza:
+                        hymn_lines.append(' '.join(current_stanza).strip())
+                        current_stanza = [stripped_line]
+                    else:
+                        current_stanza.append(stripped_line)
+                else:
+                    current_stanza.append(stripped_line)
+        if current_stanza:
+            hymn_lines.append(' '.join(current_stanza).strip())
+
+        if hymn_lines:
+            formatted_hymn = '\n\n'.join([f'<p>{line}</p>' for line in hymn_lines])
+            return formatted_hymn
+        else:
+            return None
+
+
+def display_hymn_ang(request):
+    def extract_html_file_names(directory):
+        # List all files ending with .html
+        html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+
+        # Extract base names without extension
+        base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+
+        # Sort using a custom key
+        def custom_sort_key(name):
+            # Split into parts: numbers and non-numbers
+            parts = re.split(r'(\d+)', name)
+            # Convert numeric parts to integers for correct sorting
+            parts = [int(part) if part.isdigit() else part for part in parts]
+            return parts
+
+        sorted_base_names = sorted(base_names, key=custom_sort_key)
+        return sorted_base_names
+
+    # Example usage:
+    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics_ang" # Replace with your directory path
+    html_files_list = extract_html_file_names(directory_path)
+    hymn_numbers = html_files_list  # Define the list of hymn numbers
+    hymn_number = request.GET.get('hymn_number')
+
+    if hymn_number:
+        def generate_random_word():
+            letters = string.ascii_lowercase
+            return ''.join(random.choice(letters) for _ in range(4))
+
+        random_word = generate_random_word()
+        midi_file_path =  r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid"
+        # score.write('midi', fp=midi_file_path)
+        request.session['random_word'] = random_word
+        midi_messages = 1
+        path =  r"/home/kofi532/asedachorale/adom/templates/tunes_ang/{hymn_number}.xml"
+        score = music21.converter.parse(path)
+        score.write('midi', fp=midi_file_path)
+        hymn_data = fetch_hymn_from_file_ang(hymn_number)
+        if hymn_data:
+            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+            aa = type(hymn_data)
+            # lol
+            return render(request, 'hymn_display_ang.html', {'hymn_data': hymn_data, 'hymn_numbers': hymn_numbers})
+        else:
+            return render(request, 'hymn_display_ang.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
+    else:
+        return render(request, 'hymn_display_ang.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+
+def fetch_hymn_from_file_ang(hymn_number):
+    file_path =  r"/home/kofi532/asedachorale/adom/templates/ang.txt"  # Adjust this path as per your file location
+    with open(file_path, 'r') as f:
+        hymn_found = False
+        hymn_lines = []
+        current_stanza = []
+        for line in f:
+            stripped_line = line.strip()
+            if stripped_line == f'HYMN {hymn_number}':
+                hymn_found = True
+                hymn_lines.append(f'HYMN {hymn_number}')
+            elif hymn_found and stripped_line.startswith('HYMN'):
+                break
+            elif hymn_found:
+                if stripped_line and stripped_line[0].isdigit() and stripped_line[1] == ' ':
+                    if current_stanza:
+                        hymn_lines.append(' '.join(current_stanza).strip())
+                        current_stanza = [stripped_line]
+                    else:
+                        current_stanza.append(stripped_line)
+                else:
+                    current_stanza.append(stripped_line)
+        if current_stanza:
+            hymn_lines.append(' '.join(current_stanza).strip())
+
+        if hymn_lines:
+            formatted_hymn = '\n\n'.join([f'<p>{line}</p>' for line in hymn_lines])
+            return formatted_hymn
+        else:
+            return None
+

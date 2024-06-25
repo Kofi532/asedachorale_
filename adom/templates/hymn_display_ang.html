@@ -1,0 +1,58 @@
+{% extends 'jot.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .scrollable-hymn {
+        max-height: 300px;  /* Adjust the height as needed */
+        overflow-y: auto;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h5 class="card-title">ANCIENT AND MODERN</h5>
+                </div>
+                <div class="card-body">
+                    {% if error_message %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ error_message }}
+                        </div>
+                    {% endif %}
+                    
+                    <form action="{% url 'display_hymn_ang' %}" method="get">
+                        <div class="form-group">
+                            <label for="hymn_number">Enter Hymn Number:</label>
+                            <input type="text" class="form-control" id="hymn_number" name="hymn_number">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                    
+                    <hr>
+                    
+                    {% if hymn_data %}
+                        <div class="card">
+                            <div class="card-body scrollable-hymn">
+                                {{ hymn_data|safe }}
+                            </div>
+                        </div>
+                    {% endif %}
+                    
+                    <div class="mt-4">
+                        <label class="mb-2">Select a hymn number:</label><br>
+                        {% for number in hymn_numbers %}
+                            <form action="{% url 'display_hymn_ang' %}" method="get" style="display: inline;">
+                                <input type="hidden" name="hymn_number" value="{{ number }}">
+                                <button type="submit" class="btn btn-outline-secondary mr-2 mb-2">A & M {{ number }}</button>
+                            </form>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
