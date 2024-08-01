@@ -2,7 +2,7 @@
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="2.0">
 	<work>
-		<work-title>All Hail the Power of Jesus' Name</work-title>
+		<work-title>God Moves in a Mysterious Way</work-title>
 	</work>
 	<identification>
 		<encoding>
@@ -14,49 +14,51 @@
 	</identification>
 	<defaults>
 		<scaling>
-			<millimeters>6.285892</millimeters>
+			<millimeters>6.285900</millimeters>
 			<tenths>40</tenths>
 		</scaling>
 		<page-layout>
-			<page-height>1777.950</page-height>
-			<page-width>1373.870</page-width>
+			<page-height>1777.948</page-height>
+			<page-width>1373.869</page-width>
 			<page-margins type="both">
-				<left-margin>63.635</left-margin>
-				<right-margin>63.635</right-margin>
-				<top-margin>63.635</top-margin>
-				 <bottom-margin>63.635</bottom-margin>
+				<left-margin>63.634</left-margin>
+				<right-margin>63.634</right-margin>
+				<top-margin>63.634</top-margin>
+				 <bottom-margin>63.634</bottom-margin>
 			</page-margins>
 		</page-layout>
 		<appearance>
 			<line-width type="stem">0.9375</line-width>
 			<line-width type="beam">4.0625</line-width>
 			<line-width type="staff">0.9375</line-width>
-			<line-width type="light barline">0.9639</line-width>
+			<line-width type="light barline">0.9580</line-width>
 			<line-width type="heavy barline">3.1251</line-width>
 			<line-width type="leger">1.5625</line-width>
 		</appearance>
 	</defaults>
 	<credit page="1">
-		<credit-words  default-x="161.561" default-y="173.973" justify="left" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">Text: st. 1 -3, Edward Perronet, 1 780, alt.; st. 4,
-     John Rippon, 1 787, alt.</credit-words>
+		<credit-words  default-x="161.561" default-y="174.910" justify="left" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">Text: William Cowper, 1 774
+Tune: Scottish Psalter, 1 61 5; harm. Thomas
+     Ravenscroft, c. 1 592-1 635, alt.</credit-words>
 	</credit>
 	<credit page="1">
-		<credit-words  default-x="161.561" default-y="122.068" justify="left" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">Tune: William Shrubsole, 1 779
-</credit-words>
-		<credit-words   justify="left" valign="baseline" font-family="Times New Roman" font-size="7" font-weight="normal" font-style="normal"> This hymn is in the public domain. You may freely use this score for personal and congregational worship. Ifyou reproduce the score, please credit Hymnary.org as the source.</credit-words>
+		<credit-words  default-x="168.748" default-y="91.394" justify="left" valign="baseline" font-family="Times New Roman" font-size="7" font-weight="normal" font-style="normal">This hymn is in the public domain. You may freely use this score for personal and congregational worship. Ifyou reproduce the score, please credit Hymnary.org as the source </credit-words>
+		<credit-words   justify="left" valign="baseline" font-family="Times New Roman" font-size="9" font-weight="normal" font-style="normal">.</credit-words>
 	</credit>
 	<credit page="1">
-		<credit-words  default-x="360.621" default-y="1655.938" justify="left" valign="baseline" font-family="ArialNarrow" font-size="22" font-weight="bold" font-style="normal">All Hail the Power of Jesus' Name</credit-words>
+		<credit-words  default-x="375.621" default-y="1654.686" justify="left" valign="baseline" font-family="ArialNarrow" font-size="22" font-weight="bold" font-style="normal">God Moves in a Mysterious Way</credit-words>
 	</credit>
 	<credit page="1">
-		<credit-words  default-x="781.261" default-y="129.427" justify="left" valign="baseline" font-family="Times New Roman" font-size="7" font-weight="normal" font-style="normal">http://www.hymnary.org/text/all_hail_the_power_of_jesus_name_let</credit-words>
+		<credit-words  default-x="817.803" default-y="127.947" justify="left" valign="baseline" font-family="Times New Roman" font-size="8" font-weight="normal" font-style="normal">www.hymnary.org/text/god_moves_in_a_mysterious_way</credit-words>
 	</credit>
 	<credit page="1">
-		<credit-words  default-x="1211.855" default-y="174.910" justify="right" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">868 with refrain
-MILES LANE</credit-words>
+		<credit-words  default-x="1119.577" default-y="148.645" justify="left" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">DUNDEE</credit-words>
+	</credit>
+	<credit page="1">
+		<credit-words  default-x="1177.027" default-y="174.598" justify="left" valign="baseline" font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal">CM</credit-words>
 	</credit>
 	<?Myriad
-	<picture page="1" default-x="607.181" default-y="215.760" x-size="159.061" y-size="94.248" colorbits="24bitcolor" source-width="256" source-height="150" encoding="base64" packing="zip" packedsize="36031">
+	<picture page="1" default-x="607.805" default-y="216.697" x-size="159.061" y-size="94.247" colorbits="24bitcolor" source-width="256" source-height="150" encoding="base64" packing="zip" packedsize="36031">
 AAHCAAAAjLcoaIy+vh9pEo53+nVAMy7u7u8zAQAEDMzLu7vLzMwBVXXZq7sn7XX9HdVVVVURVAzMu7u7u7u7u7vMAAQAAVVU1V1VVHRRADMy7v77777767zMwAAABVUVN
 HVdRdFVRFEATMzLu7v/fff+8zAHd02bsZNmz9JX7vBJXVO52Tum73TvN3bVTwzxd5ps6dOqu9XVXVUnSpVd5pKkkklV1V3g6u6b1d3uldKnVtV38D+73HeD9211Tamfw/
 0u8i3mIwT8x/kpH/Ev6UjG7mSd5MlSZkwRMuJSMetv91Z+Hscjns/zlZnafla3i+PcKmLZQvcrGDhWvbKlwhyoYcSP8EOiQpYuE69upYPJ+ng4PjR1er+dbeRB7L2NTsZ
@@ -470,14 +472,14 @@ Puee1fN5c1lnNz1na8TYbiT6hVOBFm5HU8WKQf97HldXlpdxpH5B/g==
 	</part-list>
 	<part id="P1">
 		<!--==========================[1,1]=============================-->
-		<measure number="1" width="187">
+		<measure number="1" width="167">
 			<print new-page="yes">
 				<system-layout>
 					<system-margins>
 						<left-margin>98.551</left-margin>
-						<right-margin>97.653</right-margin>
+						<right-margin>97.652</right-margin>
 					</system-margins>
-					<top-system-distance>156.834</top-system-distance>
+					<top-system-distance>174.022</top-system-distance>
 				</system-layout>
 			</print>
 			<barline location="left">
@@ -486,7 +488,7 @@ Puee1fN5c1lnNz1na8TYbiT6hVOBFm5HU8WKQf97HldXlpdxpH5B/g==
 			<attributes>
 				<divisions>6720</divisions>
 				<key>
-					<fifths>3</fifths>
+					<fifths>-3</fifths>
 					<mode>major</mode>
 				</key>
 				<clef number="1">
@@ -500,12 +502,7 @@ Puee1fN5c1lnNz1na8TYbiT6hVOBFm5HU8WKQf97HldXlpdxpH5B/g==
 			</attributes>
 			<direction placement="below">
 				<direction-type>
-					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal" relative-x="57.91" default-y="-130.45">2</words>
-				</direction-type>
-			</direction>
-			<direction placement="below">
-				<direction-type>
-					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal" relative-x="57.91" default-y="-100.45">1</words>
+					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal" relative-x="54.57" default-y="-115.45">2</words>
 				</direction-type>
 			</direction>
 			<attributes>
@@ -517,36 +514,41 @@ Puee1fN5c1lnNz1na8TYbiT6hVOBFm5HU8WKQf97HldXlpdxpH5B/g==
 			<note>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="-5.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
+				<lyric number="1" justify="center" default-y="-90.30">
 					<syllabic>single</syllabic>
 					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-All</text>
+God</text>
 				</lyric>
-				<lyric number="2" justify="right" default-y="-130.30">
+				<lyric number="2" justify="center" default-y="-115.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">O</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Deep</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="3" justify="center" default-y="-140.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Let</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">You</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
+				<lyric number="4" justify="center" default-y="-165.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Oh,</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">His</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Blind</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
@@ -555,112 +557,85 @@ All</text>
 			</note>
 		</measure>
 		<!--==========================[1,2]=============================-->
-		<measure number="2" width="312">
+		<measure number="2" width="247">
 			<note>
 				<pitch>
-					<step>A</step>
+					<step>G</step>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
+				<stem default-y="4.53">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hail</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">moves</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
+				<lyric number="2" justify="center" default-y="-115.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">seed</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="3" justify="center" default-y="-140.30">
 					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fear</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">that</text>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pur</text>
 				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">with</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">power</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Is</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">tongue</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all</text>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="9.53">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ful</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pos</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">be</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -671,174 +646,39 @@ All</text>
 			<note>
 				<pitch>
 					<step>B</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="14.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rael's</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.53">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,3]=============================-->
-		<measure number="3" width="345">
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Je</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cho</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sa</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="11.72">up</stem>
-				<beam number="1">begin</beam>
-				<lyric number="1" justify="left" default-y="-100.30">
+				<lyric number="1" justify="right" default-y="-90.30">
 					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sus'</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
 				</lyric>
-				<lyric number="2" justify="left" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sen</text>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fath</text>
 				</lyric>
-				<lyric number="3" justify="left" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">saints,</text>
 				</lyric>
-				<lyric number="4" justify="left" default-y="-190.30">
+				<lyric number="4" justify="center" default-y="-165.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cred</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">es</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">lief</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
 					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="11.72">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="9.22">up</stem>
-				<beam number="1">end</beam>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<accidental>sharp</accidental>
-				<stem default-y="9.22">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="14.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">name!</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">race</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">tribe</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">throng</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -849,70 +689,250 @@ Je</text>
 			<note>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="-5.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Let</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">now</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="1" justify="center" default-y="-90.30">
 					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">re</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mys</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">om</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
 					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">we</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fresh</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">is</text>
 				</lyric>
 			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
 			<note>
+				<chord/>
 				<pitch>
-					<step>E</step>
-					<octave>4</octave>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
-				<voice>2</voice>
+				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="-67.97">down</stem>
+				<stem default-y="-5.47">up</stem>
 			</note>
 		</measure>
-		<!--==========================[1,4]=============================-->
-		<measure number="4" width="203">
+		<!--==========================[1,3]=============================-->
+		<measure number="3" width="249">
 			<note>
 				<pitch>
 					<step>F</step>
-					<alter>1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="-0.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
+				<lyric number="1" justify="center" default-y="-90.30">
 					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">an</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">te</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
+				<lyric number="2" justify="center" default-y="-115.30">
 					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ran</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="3" justify="center" default-y="-140.30">
 					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">spon</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cour</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rip</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
 					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">at</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sure</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>D</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<accidental>flat</accidental>
+				<stem default-y="-0.47">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rious</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ble</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">age</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">en</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>D</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="9.53">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">way</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mines</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">take;</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fast,</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">err</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="9.53">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+			</note>
+		</measure>
+		<!--==========================[1,4]=============================-->
+		<measure number="4" width="247">
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-0.47">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">won</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">nev</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">clouds</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fold</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">scan</text>
 				</lyric>
 			</note>
 			<note>
@@ -924,67 +944,191 @@ Je</text>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
+				<accidental>natural</accidental>
 				<stem default-y="-0.47">up</stem>
 			</note>
 			<note>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-8.28">up</stem>
-				<beam number="1">begin</beam>
-				<lyric number="1" justify="left" default-y="-100.30">
+				<type>quarter</type>
+				<stem default-y="-5.47">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">gels</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ders</text>
 				</lyric>
-				<lyric number="2" justify="left" default-y="-130.30">
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">you</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">somed</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
 				</lyric>
-				<lyric number="3" justify="left" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sive</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
+				<lyric number="5" justify="center" default-y="-190.30">
 					<syllabic>single</syllabic>
 					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
 				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-5.47">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-5.47">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fail</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">so</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">work</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-5.47">up</stem>
 			</note>
 			<note>
 				<pitch>
 					<step>D</step>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-10.78">up</stem>
-				<beam number="1">end</beam>
-			</note>
-			<backup>
 				<duration>6720</duration>
-			</backup>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-10.47">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">per</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">much</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+			</note>
 			<note>
+				<chord/>
 				<pitch>
-					<step>A</step>
+					<step>B</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
-				<voice>2</voice>
+				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="-84.22">down</stem>
+				<stem default-y="-10.47">up</stem>
 			</note>
 		</measure>
 		<!--==========================[1,5]=============================-->
-		<measure number="5" width="241">
+		<measure number="5" width="137">
+			<note>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-5.47">up</stem>
+				<lyric number="1" justify="center" default-y="-90.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">form.</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-115.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">skill,</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-140.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">dread</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-165.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hour.</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-190.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">vain.</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-5.47">up</stem>
+			</note>
+		</measure>
+		<!--==========================[1,6]=============================-->
+		<measure number="6" width="149">
 			<print new-system="yes">
 				<system-layout>
 					<system-margins>
-						<left-margin>98.864</left-margin>
-						<right-margin>97.653</right-margin>
+						<left-margin>99.176</left-margin>
+						<right-margin>101.020</right-margin>
 					</system-margins>
 					<system-distance>124.375</system-distance>
 				</system-layout>
@@ -995,287 +1139,8 @@ Je</text>
 			</attributes>
 			<note>
 				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-15.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pros</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">from</text>
-				</lyric>
-				<lyric number="3" justify="right" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">feet</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-15.47">up</stem>
-			</note>
-			<note>
-				<pitch>
 					<step>B</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-20.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">trate</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">may</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-20.47">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,6]=============================-->
-		<measure number="6" width="214">
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>20160</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="-20.47">up</stem>
-				<notations>
-					<articulations>
-						<staccato placement="below" relative-x="19.08" relative-y="5.03"/>
-					</articulations>
-				</notations>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall.</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall,</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">call,</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall!</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>20160</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>20160</duration>
-				<voice>2</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="-80.47">down</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-5.47">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Bring</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hail</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-We'll</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-5.47">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,7]=============================-->
-		<measure number="7" width="314">
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">forth</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">join</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">who</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">roy</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">saves</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">maj</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>B</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -1283,26 +1148,204 @@ We'll</text>
 				<type>quarter</type>
 				<stem default-y="14.53">up</stem>
 				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">al</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">you</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+He</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">es</text>
+				<lyric number="2" justify="right" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">he</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er</text>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">are</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+The</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+God</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="14.53">up</stem>
+			</note>
+		</measure>
+		<!--==========================[1,7]=============================-->
+		<measure number="7" width="254">
+			<note>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>5</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="22.03">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">plants</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">trea</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">big</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bud</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">is</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="22.03">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>5</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="19.53">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sures</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">with</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">may</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="19.53">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>5</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="17.03">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">foot</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">up</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mer</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">have</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">own</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="17.03">up</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="14.53">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">steps</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cy</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>F</step>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -1312,110 +1355,95 @@ We'll</text>
 			</note>
 		</measure>
 		<!--==========================[1,8]=============================-->
-		<measure number="8" width="279">
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">di</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">by</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ty</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">last</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-			</note>
+		<measure number="8" width="252">
 			<note>
 				<pitch>
 					<step>B</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="11.72">up</stem>
-				<beam number="1">begin</beam>
-				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
+				<type>quarter</type>
+				<stem default-y="14.53">up</stem>
+				<lyric number="1" justify="right" default-y="-100.30">
 					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bright</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
 					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">as</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bit</text>
 				</lyric>
-				<lyric number="4" justify="left" default-y="-190.30">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ter</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>E</step>
+					<step>G</step>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="11.72">up</stem>
+				<type>quarter</type>
+				<stem default-y="14.53">up</stem>
 			</note>
 			<note>
 				<pitch>
 					<step>A</step>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="9.22">up</stem>
-				<beam number="1">end</beam>
+				<type>quarter</type>
+				<accidental>natural</accidental>
+				<stem default-y="9.53">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">de</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">shall</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ter</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pret</text>
+				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>D</step>
-					<alter>1</alter>
+					<step>F</step>
 					<octave>4</octave>
 				</pitch>
-				<duration>3360</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>eighth</type>
-				<accidental>sharp</accidental>
-				<stem default-y="9.22">up</stem>
+				<type>quarter</type>
+				<stem default-y="9.53">up</stem>
 			</note>
 			<note>
 				<pitch>
 					<step>B</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -1423,26 +1451,30 @@ We'll</text>
 				<type>quarter</type>
 				<stem default-y="14.53">up</stem>
 				<lyric number="1" justify="center" default-y="-100.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">dem,</text>
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sea</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="-130.30">
+				<lyric number="2" justify="center" default-y="-125.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">grace,</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">signs</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="-160.30">
+				<lyric number="3" justify="center" default-y="-150.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cribe,</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">break</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="-190.30">
+				<lyric number="4" justify="center" default-y="-175.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">song.</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">taste,</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er,</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>E</step>
+					<step>D</step>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -1450,373 +1482,191 @@ We'll</text>
 				<type>quarter</type>
 				<stem default-y="14.53">up</stem>
 			</note>
-			<barline location="right">
-				<repeat direction="backward" times="4"/>
-			</barline>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">but</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="4.53">up</stem>
+			</note>
 		</measure>
 		<!--==========================[1,9]=============================-->
-		<measure number="9" width="134">
-			<print new-system="yes">
-				<system-layout>
-					<system-margins>
-						<left-margin>98.864</left-margin>
-						<right-margin>101.020</right-margin>
-					</system-margins>
-					<system-distance>124.688</system-distance>
-				</system-layout>
-			</print>
-			<attributes>
-				<staff-details number="1" print-object="yes">
-				</staff-details>
-			</attributes>
-			<forward>
-				<duration>420</duration>
-			</forward>
-			<direction placement="above">
-				<direction-type>
-					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="italic" relative-x="0.00" default-y="19.65">Refrain</words>
-				</direction-type>
-			</direction>
-			<backup>
-				<duration>420</duration>
-			</backup>
+		<measure number="9" width="277">
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-0.47">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rides</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">works</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bless</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sweet</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">he</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-0.47">up</stem>
+			</note>
 			<note>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="-5.47">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">up</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ings</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
 				</lyric>
 			</note>
 			<backup>
 				<duration>6720</duration>
 			</backup>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-67.97">down</stem>
-			</note>
-		</measure>
-		<!--==========================[1,10]=============================-->
-		<measure number="10" width="151">
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="9.53">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,11]=============================-->
-		<measure number="11" width="151">
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,12]=============================-->
-		<measure number="12" width="181">
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="22.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>13440</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-				<notations>
-					<slur type="start" number="1" placement="below" orientation="under"/>
-				</notations>
-			</note>
 			<note>
 				<pitch>
 					<step>G</step>
-					<alter>1</alter>
-					<octave>4</octave>
+					<octave>3</octave>
 				</pitch>
 				<duration>3360</duration>
 				<voice>2</voice>
 				<type>eighth</type>
-				<stem default-y="-60.16">down</stem>
+				<stem default-y="-83.28">down</stem>
 				<beam number="1">begin</beam>
 			</note>
 			<note>
 				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>4</octave>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>3</octave>
 				</pitch>
 				<duration>3360</duration>
 				<voice>2</voice>
 				<type>eighth</type>
-				<stem default-y="-62.66">down</stem>
+				<stem default-y="-81.72">down</stem>
 				<beam number="1">end</beam>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
 			</note>
 			<note>
 				<pitch>
 					<step>E</step>
-					<octave>5</octave>
+					<alter>-1</alter>
+					<octave>4</octave>
 				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="22.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
+				<type>quarter</type>
+				<stem default-y="-5.47">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">on</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">so</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">on</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">be</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">make</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="22.03">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,13]=============================-->
-		<measure number="13" width="151">
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>D</step>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="19.53">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="19.53">up</stem>
-			</note>
-		</measure>
-		<!--==========================[1,14]=============================-->
-		<measure number="14" width="163">
-			<note>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>5</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Lord</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="17.03">up</stem>
-			</note>
-			<note>
 				<pitch>
 					<step>B</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="14.53">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>13440</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>4</octave>
+					<alter>-1</alter>
+					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
-				<voice>2</voice>
+				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="-67.97">down</stem>
-				<notations>
-					<slur type="start" number="1" placement="below" orientation="under"/>
-				</notations>
+				<stem default-y="-5.47">up</stem>
 			</note>
 			<note>
 				<pitch>
@@ -1824,55 +1674,101 @@ Lord</text>
 					<octave>4</octave>
 				</pitch>
 				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-72.97">down</stem>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
-			</note>
-		</measure>
-		<!--==========================[1,15]=============================-->
-		<measure number="15" width="113">
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>4</octave>
-				</pitch>
-				<duration>20160</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="9.53">up</stem>
-				<lyric number="1" justify="center" default-y="-130.30">
+				<type>quarter</type>
+				<stem default-y="-10.47">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all!</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">vereign</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">your</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">it</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>C</step>
-					<alter>1</alter>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-10.47">up</stem>
+			</note>
+		</measure>
+		<!--==========================[1,10]=============================-->
+		<measure number="10" width="112">
+			<note>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
 					<octave>4</octave>
 				</pitch>
 				<duration>20160</duration>
 				<voice>1</voice>
 				<type>half</type>
 				<dot/>
-				<stem default-y="9.53">up</stem>
+				<stem default-y="-5.47">up</stem>
+				<lyric number="1" justify="center" default-y="-100.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">storm.</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="-125.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will.</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="-150.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">head.</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="-175.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">flower.</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="-200.30">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">plain.</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-5.47">up</stem>
 			</note>
 			<barline location="right">
-				<bar-style>light-heavy</bar-style>
+				<repeat direction="backward" times="5"/>
 			</barline>
 		</measure>
 	</part>
 	<part id="P2">
 		<!--==========================[2,1]=============================-->
-		<measure number="1" width="187">
+		<measure number="1" width="167">
 			<print new-page="yes">
 				<staff-layout number="1">
-					<staff-distance>180.938</staff-distance>
+					<staff-distance>179.688</staff-distance>
 				</staff-layout>
 			</print>
 			<barline location="left">
@@ -1881,7 +1777,7 @@ Lord</text>
 			<attributes>
 				<divisions>6720</divisions>
 				<key>
-					<fifths>3</fifths>
+					<fifths>-3</fifths>
 					<mode>major</mode>
 				</key>
 				<clef number="1">
@@ -1895,7 +1791,7 @@ Lord</text>
 			</attributes>
 			<direction placement="above">
 				<direction-type>
-					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal" relative-x="57.91" default-y="60.49">3</words>
+					<words font-family="Times New Roman" font-size="10" font-weight="normal" font-style="normal" relative-x="54.57" default-y="79.24">3</words>
 				</direction-type>
 			</direction>
 			<attributes>
@@ -1906,191 +1802,212 @@ Lord</text>
 			</attributes>
 			<note print-lyric="no">
 				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-35.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-All</text>
-				</lyric>
-				<lyric number="2" justify="right" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">O</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Let</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Oh,</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>2</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,2]=============================-->
-		<measure number="2" width="312">
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hail</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">seed</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">that</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>2</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">with</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">power</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Is</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">tongue</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
 					<step>G</step>
-					<alter>1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
 				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
+				<lyric number="1" justify="center" default-y="129.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+God</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
+				<lyric number="2" justify="center" default-y="104.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rael's</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Deep</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
+				<lyric number="3" justify="center" default-y="79.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">You</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
+				<lyric number="4" justify="center" default-y="54.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">His</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Blind</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,2]=============================-->
+		<measure number="2" width="247">
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">moves</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fear</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pur</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-62.97">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ful</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pos</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">be</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-78.86">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-67.97">down</stem>
+				<lyric number="1" justify="right" default-y="129.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fath</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">saints,</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">es</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">lief</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>G</step>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-83.86">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mys</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">om</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fresh</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">is</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
@@ -2100,353 +2017,213 @@ All</text>
 			</note>
 		</measure>
 		<!--==========================[2,3]=============================-->
-		<measure number="3" width="345">
+		<measure number="3" width="249">
 			<note print-lyric="no">
 				<pitch>
 					<step>A</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="23.28">up</stem>
-				<lyric number="1" justify="center" default-y="120.63">
+				<stem default-y="-55.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
 					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Je</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">te</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
+				<lyric number="2" justify="center" default-y="104.38">
 					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cho</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
 				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
+				<lyric number="3" justify="center" default-y="79.38">
 					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cour</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
+				<lyric number="4" justify="center" default-y="54.38">
 					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sa</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rip</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sure</text>
 				</lyric>
 			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
 			<note>
+				<chord/>
 				<pitch>
-					<step>A</step>
+					<step>D</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
-				<voice>2</voice>
+				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="-35.47">down</stem>
+				<accidental>flat</accidental>
+				<stem default-y="-55.47">down</stem>
 			</note>
 			<note print-lyric="no">
 				<pitch>
 					<step>B</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="24.53">up</stem>
-				<lyric number="1" justify="left" default-y="120.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sus'</text>
-				</lyric>
-				<lyric number="2" justify="left" default-y="90.63">
+				<stem default-y="-30.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sen</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rious</text>
 				</lyric>
-				<lyric number="3" justify="left" default-y="60.63">
+				<lyric number="2" justify="center" default-y="104.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ble</text>
 				</lyric>
-				<lyric number="4" justify="left" default-y="30.63">
+				<lyric number="3" justify="center" default-y="79.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cred</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">age</text>
 				</lyric>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>2</voice>
-				<type>eighth</type>
-				<stem default-y="-40.16">down</stem>
-				<beam number="1">begin</beam>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>2</voice>
-				<type>eighth</type>
-				<stem default-y="-42.66">down</stem>
-				<beam number="1">end</beam>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
+				<lyric number="4" justify="center" default-y="54.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">name!</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">en</text>
 				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">race</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">tribe</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">throng</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">Let</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">now</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">re</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">we</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,4]=============================-->
-		<measure number="4" width="203">
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.63">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">an</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.63">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ran</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.63">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">spon</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">at</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-55.16">down</stem>
-				<beam number="1">begin</beam>
-				<lyric number="1" justify="left" default-y="120.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">gels</text>
-				</lyric>
-				<lyric number="2" justify="left" default-y="90.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">somed</text>
-				</lyric>
-				<lyric number="3" justify="left" default-y="60.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sive</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-55.16">down</stem>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-52.66">down</stem>
-				<beam number="1">end</beam>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-52.66">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,5]=============================-->
-		<measure number="5" width="241">
-			<print new-system="yes">
-				<staff-layout number="1">
-					<staff-distance>180.938</staff-distance>
-				</staff-layout>
-			</print>
-			<attributes>
-				<staff-details number="1" print-object="yes">
-				</staff-details>
-			</attributes>
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pros</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">from</text>
-				</lyric>
-				<lyric number="3" justify="right" default-y="60.64">
+				<lyric number="5" justify="center" default-y="29.38">
 					<syllabic>single</syllabic>
 					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">feet</text>
-				</lyric>
 			</note>
 			<backup>
 				<duration>6720</duration>
 			</backup>
 			<note>
 				<pitch>
-					<step>E</step>
-					<octave>3</octave>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>2</voice>
 				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
+				<stem default-y="-60.47">down</stem>
 			</note>
 			<note print-lyric="no">
 				<pitch>
-					<step>E</step>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-62.97">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">way</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mines</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">take;</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fast,</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">err</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-78.86">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
 				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">trate</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
 					<syllabic>single</syllabic>
 					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
 				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
+				<lyric number="2" justify="center" default-y="104.38">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">may</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">un</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,4]=============================-->
+		<measure number="4" width="247">
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-30.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">won</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">nev</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">clouds</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fold</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">scan</text>
 				</lyric>
 			</note>
 			<backup>
@@ -2454,392 +2231,196 @@ Je</text>
 			</backup>
 			<note>
 				<pitch>
-					<step>E</step>
-					<octave>3</octave>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>2</voice>
 				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ders</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">you</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>C</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-35.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fail</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">so</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">work</text>
+				</lyric>
+			</note>
+			<backup>
+				<duration>6720</duration>
+			</backup>
+			<note>
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>2</voice>
+				<type>quarter</type>
+				<stem default-y="-62.97">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">per</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">much</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ery</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,5]=============================-->
+		<measure number="5" width="137">
+			<note print-lyric="no">
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="129.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">form.</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="104.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">skill,</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="79.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">dread</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="54.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hour.</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="29.38">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">vain.</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
 				<stem default-y="-50.47">down</stem>
 			</note>
 		</measure>
 		<!--==========================[2,6]=============================-->
-		<measure number="6" width="214">
-			<note print-lyric="no">
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>20160</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="-62.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall.</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall,</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">call,</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">fall!</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>2</octave>
-				</pitch>
-				<duration>20160</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="-62.97">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Bring</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">hail</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">to</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-We'll</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>2</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,7]=============================-->
-		<measure number="7" width="314">
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">forth</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">join</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>2</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-62.97">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">who</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>D</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-55.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">roy</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">saves</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">maj</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ev</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-57.97">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">al</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">you</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">es</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,8]=============================-->
-		<measure number="8" width="279">
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="23.28">up</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">di</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">by</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ty</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">last</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="-35.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>B</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
-				<type>quarter</type>
-				<stem default-y="24.53">up</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>middle</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>begin</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">as</text>
-				</lyric>
-				<lyric number="4" justify="left" default-y="30.63">
-					<syllabic>end</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ing</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-40.16">down</stem>
-				<beam number="1">begin</beam>
-			</note>
-			<note>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="-42.66">down</stem>
-				<beam number="1">end</beam>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="120.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">dem,</text>
-				</lyric>
-				<lyric number="2" justify="center" default-y="90.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">grace,</text>
-				</lyric>
-				<lyric number="3" justify="center" default-y="60.64">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cribe,</text>
-				</lyric>
-				<lyric number="4" justify="center" default-y="30.63">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">song.</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="-50.47">down</stem>
-			</note>
-			<barline location="right">
-				<repeat direction="backward" times="4"/>
-			</barline>
-		</measure>
-		<!--==========================[2,9]=============================-->
-		<measure number="9" width="134">
+		<measure number="6" width="149">
 			<print new-system="yes">
 				<staff-layout number="1">
-					<staff-distance>177.500</staff-distance>
+					<staff-distance>188.438</staff-distance>
 				</staff-layout>
 			</print>
 			<attributes>
@@ -2848,174 +2429,130 @@ We'll</text>
 			</attributes>
 			<note print-lyric="no">
 				<pitch>
-					<step>E</step>
+					<step>G</step>
 					<octave>3</octave>
 				</pitch>
 				<duration>6720</duration>
 				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="17.03">up</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>E</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>2</voice>
 				<type>quarter</type>
 				<stem default-y="-50.47">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,10]=============================-->
-		<measure number="10" width="151">
-			<note print-lyric="no">
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-35.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-35.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-35.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-35.47">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,11]=============================-->
-		<measure number="11" width="151">
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-45.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-45.47">down</stem>
-			</note>
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-45.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
-				</lyric>
-			</note>
-			<note>
-				<chord/>
-				<pitch>
-					<step>F</step>
-					<alter>1</alter>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-45.47">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,12]=============================-->
-		<measure number="12" width="181">
-			<note print-lyric="no">
-				<pitch>
-					<step>C</step>
-					<alter>1</alter>
-					<octave>4</octave>
-				</pitch>
-				<duration>6720</duration>
-				<voice>1</voice>
-				<type>quarter</type>
-				<stem default-y="37.03">up</stem>
 				<notations>
-					<slur type="start" number="1" placement="above" orientation="over"/>
+					<articulations>
+						<accent placement="above" relative-x="-22.86" relative-y="80.53"/>
+					</articulations>
 				</notations>
-				<lyric number="1" justify="center" default-y="87.20">
+				<lyric number="1" justify="center" default-y="128.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+He</text>
+				</lyric>
+				<lyric number="2" justify="right" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">he</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">are</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+The</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
+God</text>
 				</lyric>
 			</note>
-			<backup>
-				<duration>6720</duration>
-			</backup>
 			<note>
+				<chord/>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
 				<stem default-y="-50.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,7]=============================-->
+		<measure number="7" width="254">
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">plants</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">trea</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">big</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bud</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">is</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-30.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sures</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">with</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">may</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
 			</note>
 			<backup>
 				<duration>6720</duration>
@@ -3023,95 +2560,83 @@ We'll</text>
 			<note>
 				<pitch>
 					<step>B</step>
-					<octave>3</octave>
+					<alter>-1</alter>
+					<octave>2</octave>
 				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="31.72">up</stem>
-				<beam number="1">begin</beam>
-			</note>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>3360</duration>
-				<voice>1</voice>
-				<type>eighth</type>
-				<stem default-y="29.22">up</stem>
-				<beam number="1">end</beam>
-				<notations>
-					<slur type="stop" number="1"/>
-				</notations>
+				<duration>6720</duration>
+				<voice>2</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
 			</note>
 			<note print-lyric="no">
 				<pitch>
-					<step>B</step>
+					<step>G</step>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
-				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">foot</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">up</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">mer</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">have</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him,</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">own</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>E</step>
+					<step>C</step>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
-				<stem default-y="-50.47">down</stem>
-			</note>
-		</measure>
-		<!--==========================[2,13]=============================-->
-		<measure number="13" width="151">
-			<note print-lyric="no">
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="27.03">up</stem>
-				<lyric number="1" justify="center" default-y="87.20">
-					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">crown</text>
-				</lyric>
-			</note>
-			<backup>
-				<duration>13440</duration>
-			</backup>
-			<note>
-				<pitch>
-					<step>A</step>
-					<octave>3</octave>
-				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
-				<stem default-y="-35.47">down</stem>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
 			</note>
 			<note print-lyric="no">
 				<pitch>
-					<step>A</step>
+					<step>F</step>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
 				<stem default-y="-55.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
+				<lyric number="1" justify="center" default-y="128.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">him</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">steps</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">cy</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">a</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
 				</lyric>
 			</note>
 			<note>
@@ -3120,98 +2645,409 @@ We'll</text>
 					<step>D</step>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
-				<voice>2</voice>
-				<type>half</type>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
 				<stem default-y="-55.47">down</stem>
 			</note>
 		</measure>
-		<!--==========================[2,14]=============================-->
-		<measure number="14" width="163">
+		<!--==========================[2,8]=============================-->
+		<measure number="8" width="252">
 			<note print-lyric="no">
 				<pitch>
-					<step>A</step>
-					<octave>3</octave>
+					<step>C</step>
+					<octave>4</octave>
 				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
+				<type>quarter</type>
 				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
+				<lyric number="1" justify="right" default-y="128.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">
-Lord</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bright</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bit</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>middle</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ter</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
 					<step>E</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
+				<type>quarter</type>
 				<stem default-y="-50.47">down</stem>
 			</note>
 			<note print-lyric="no">
 				<pitch>
-					<step>G</step>
-					<alter>1</alter>
-					<octave>3</octave>
+					<step>C</step>
+					<octave>4</octave>
 				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-50.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
+				<type>quarter</type>
+				<stem default-y="-45.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">de</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">shall</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">of</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ter</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">pret</text>
 				</lyric>
 			</note>
 			<note>
 				<chord/>
 				<pitch>
-					<step>E</step>
+					<step>F</step>
 					<octave>3</octave>
 				</pitch>
-				<duration>13440</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<stem default-y="-50.47">down</stem>
+				<type>quarter</type>
+				<stem default-y="-45.47">down</stem>
 			</note>
-		</measure>
-		<!--==========================[2,15]=============================-->
-		<measure number="15" width="113">
 			<note print-lyric="no">
 				<pitch>
-					<step>A</step>
+					<step>B</step>
+					<alter>-1</alter>
 					<octave>3</octave>
 				</pitch>
-				<duration>20160</duration>
+				<duration>6720</duration>
 				<voice>1</voice>
-				<type>half</type>
-				<dot/>
-				<stem default-y="-35.47">down</stem>
-				<lyric number="1" justify="center" default-y="87.20">
+				<type>quarter</type>
+				<stem default-y="-30.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sea</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
 					<syllabic>single</syllabic>
-					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">all!</text>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">signs</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">break</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">taste,</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">er,</text>
 				</lyric>
 			</note>
 			<backup>
-				<duration>20160</duration>
+				<duration>6720</duration>
+			</backup>
+			<note>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>2</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">in</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">but</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">and</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-50.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,9]=============================-->
+		<measure number="9" width="277">
+			<note print-lyric="no">
+				<pitch>
+					<step>A</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-35.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">rides</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">works</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">bless</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">sweet</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">he</text>
+				</lyric>
+			</note>
+			<backup>
+				<duration>6720</duration>
 			</backup>
 			<note>
 				<pitch>
 					<step>A</step>
+					<alter>-1</alter>
 					<octave>2</octave>
 				</pitch>
-				<duration>20160</duration>
+				<duration>6720</duration>
 				<voice>2</voice>
-				<type>half</type>
-				<dot/>
+				<type>quarter</type>
 				<stem default-y="-62.97">down</stem>
 			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">up</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">his</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">ings</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>C</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-57.97">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">on</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>begin</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">so</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>end</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">on</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">be</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">make</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+			</note>
+			<note print-lyric="no">
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">vereign</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">your</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">the</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">it</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>B</step>
+					<alter>-1</alter>
+					<octave>2</octave>
+				</pitch>
+				<duration>6720</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem default-y="-60.47">down</stem>
+			</note>
+		</measure>
+		<!--==========================[2,10]=============================-->
+		<measure number="10" width="112">
+			<note print-lyric="no">
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-50.47">down</stem>
+				<lyric number="1" justify="center" default-y="128.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">storm.</text>
+				</lyric>
+				<lyric number="2" justify="center" default-y="103.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">will.</text>
+				</lyric>
+				<lyric number="3" justify="center" default-y="78.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">head.</text>
+				</lyric>
+				<lyric number="4" justify="center" default-y="53.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">flower.</text>
+				</lyric>
+				<lyric number="5" justify="center" default-y="28.13">
+					<syllabic>single</syllabic>
+					<text font-family="Times New Roman" font-size="11" font-weight="normal" font-style="normal" xml:lang="en">plain.</text>
+				</lyric>
+			</note>
+			<note>
+				<chord/>
+				<pitch>
+					<step>E</step>
+					<alter>-1</alter>
+					<octave>3</octave>
+				</pitch>
+				<duration>20160</duration>
+				<voice>1</voice>
+				<type>half</type>
+				<dot/>
+				<stem default-y="-50.47">down</stem>
+			</note>
+			<barline location="right">
+				<repeat direction="backward" times="5"/>
+			</barline>
 		</measure>
 	</part>
 </score-partwise>
