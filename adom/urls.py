@@ -5,13 +5,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('#', views.music_view, name='music_view'),
-    path('/', views.handle_click, name='handle_click'), 
+    # path('/', views.handle_click, name='handle_click'),
     path('solfa/', views.handle_click, name='mistake1'),
     path('all/', views.index, name='index'),
     path('all/base.html/', views.base, name='base'),
-    path('mhb/', views.handle_click, name='handle_click'),
-    path('presby/', views.handle_click_presby, name='handle_click_presby'),
-    path('anglican/', views.handle_click_ang, name='handle_click_ang'),
+    # path('mhb/', views.handle_click, name='handle_click'),
+    # path('presby/', views.handle_click_presby, name='handle_click_presby'),
+    # path('anglican/', views.handle_click_ang, name='handle_click_ang'),
     path('previous/', views.previous_view, name='previous_view'),
     path('search/', views.search_hymn, name='search_hymn'),
     path('search_ang/', views.search_hymn_ang, name='search_hymn_ang'),
@@ -19,14 +19,31 @@ urlpatterns = [
     # path('play-music/', views.play_midi, name='play_music'),
     path('download-midi/', views.download_midi, name='download_midi'),
     path('contact/', views.contact, name='contact'),
-    path('', views.first, name='first'),
-    path('privacy/', views.privacy, name='privacy'), 
-    path('anthems/', views.anthems, name='anthems'), 
-    path('armah/', views.armah, name='armah'), 
-    path('armah_songs/', views.armah_songs, name='armah_songs'), 
+    # path('', views.first, name='first'),
+    path('privacy/', views.privacy, name='privacy'),
+    # path('anthems/', views.anthems, name='anthems'),
+    path('armah/', views.armah, name='armah'),
+    path('armah_songs/', views.armah_songs, name='armah_songs'),
+    path('mhb/', views.display_hymn, name='display_hymn'),
+    path('anglican/', views.display_hymn_ang, name='display_hymn_ang'),
+    path('presby/', views.display_hymn_presby, name='display_hymn_presby'),
+    path('anthems/', views.display_hymn_anthem, name='display_hymn_anthem'),
+    path('', views.hymn_search_view, name='hymn_search'),
+    path('<str:source>/<str:hymn_number>/', views.hymn_detail_view, name='hymn_detail'),
     ]
 
 
 # Serve media files during development
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# # musicapp/urls.py
+# from django.urls import path
+# from .views import first
+
+# urlpatterns = [
+
+#     path('', first, name='first'),
+
+#     ]

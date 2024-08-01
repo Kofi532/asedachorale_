@@ -19,7 +19,8 @@ from pydub import AudioSegment
 import random
 import string
 from django.conf import settings
-
+from django.http import HttpResponseNotFound
+import pandas as pd
 # from .models import NoteList
 
 
@@ -1264,9 +1265,9 @@ def display_hymn_anthem(request):
 
     if hymn_number:
         random_word = generate_random_word()
-        midi_file_path =  r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+        midi_file_path =  f"/home/kofi532/asedachorale/media/{random_word}.mid"
         request.session['random_word'] = random_word
-        path = r"/home/kofi532/asedachorale/adom/templates/tunes_anthems/{hymn_number}.xml"
+        path = f"/home/kofi532/asedachorale/adom/templates/tunes_anthems/{hymn_number}.xml"
         score = music21.converter.parse(path)
         score.write('midi', fp=midi_file_path)
         hymn_data = fetch_hymn_from_file_anthem(hymn_number)
@@ -1300,7 +1301,7 @@ def generate_random_word():
     return ''.join(random.choice(letters) for _ in range(4))
 
 def fetch_hymn_from_file_anthem(hymn_number):
-    file_path =   r"/home/kofi532/asedachorale/adom/templates/armah.txt'
+    file_path =   r"/home/kofi532/asedachorale/adom/templates/armah.txt"
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             hymn_found = False
@@ -1349,7 +1350,7 @@ def display_hymn_presby(request):
         return sorted_base_names
 
     # Example usage:
-    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics_presby'  # Replace with your directory path
+    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics_presby"  # Replace with your directory path
     html_files_list = extract_html_file_names(directory_path)
     hymn_numbers = html_files_list  # Define the list of hymn numbers
     hymn_number = request.GET.get('hymn_number')
@@ -1360,7 +1361,7 @@ def display_hymn_presby(request):
             return ''.join(random.choice(letters) for _ in range(4))
 
         random_word = generate_random_word()
-        midi_file_path = r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'
+        midi_file_path = r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid"
         request.session['random_word'] = random_word
         midi_messages = 1
         # path =  r"/home/kofi532/asedachorale/adom/templates/tunes_presby/{hymn_number}.xml"
@@ -1445,53 +1446,439 @@ def fetch_hymn_from_file_presby(hymn_number):
 
 
 def display_hymn(request):
-    def extract_html_file_names(directory):
-        # List all files ending with .html
-        html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+    try:
+        def extract_html_file_names(directory):
+            # List all files ending with .html
+            html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
 
-        # Extract base names without extension
-        base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+            # Extract base names without extension
+            base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
 
-        # Sort using a custom key
-        def custom_sort_key(name):
-            # Split into parts: numbers and non-numbers
-            parts = re.split(r'(\d+)', name)
-            # Convert numeric parts to integers for correct sorting
-            parts = [int(part) if part.isdigit() else part for part in parts]
-            return parts
+            # Sort using a custom key
+            def custom_sort_key(name):
+                # Split into parts: numbers and non-numbers
+                parts = re.split(r'(\d+)', name)
+                # Convert numeric parts to integers for correct sorting
+                parts = [int(part) if part.isdigit() else part for part in parts]
+                return parts
 
-        sorted_base_names = sorted(base_names, key=custom_sort_key)
-        return sorted_base_names
+            sorted_base_names = sorted(base_names, key=custom_sort_key)
+            return sorted_base_names
 
-    # Example usage:
-    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics" # Replace with your directory path
-    html_files_list = extract_html_file_names(directory_path)
-    hymn_numbers = html_files_list  # Define the list of hymn numbers
-    hymn_number = request.GET.get('hymn_number')
+        directory_path = r"/home/kofi532/asedachorale/adom/templates/lyrics"  # Replace with your directory path
+        html_files_list = extract_html_file_names(directory_path)
+        hymn_numbers = html_files_list  # Define the list of hymn numbers
+        hymn_number = request.GET.get('hymn_number')
 
-    if hymn_number:
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
+        if hymn_number:
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-        random_word = generate_random_word()
-        midi_file_path = r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid'"
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        path = r"/home/kofi532/asedachorale/adom/templates/tunes/{hymn_number}.xml"
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
-        hymn_data = fetch_hymn_from_file(hymn_number)
-        if hymn_data:
-            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
-            aa = type(hymn_data)
-            # lol
-            return render(request, 'hymn_display.html', {'hymn_data': hymn_data, 'hymn_numbers': hymn_numbers})
+            random_word = generate_random_word()
+            midi_file_path = f"/home/kofi532/asedachorale/media/{random_word}.mid"
+            request.session['random_word'] = random_word
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes/{hymn_number}.xml"
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
+            hymn_data = fetch_hymn_from_file(hymn_number)
+
+            # Initialize a list to store notes and rests at each point in time
+            notes_and_rests_by_time = []
+            notes_and_rests_by_time_ = []
+
+            # Get all the notes, chords, and rests from the score
+            all_notes = score.flat.getElementsByClass(music21.note.GeneralNote)
+
+            # Create a dictionary to group elements by their starting offset
+            elements_by_offset = {}
+
+            # Iterate through the notes, chords, and rests and group them by offset
+            for element in all_notes:
+                offset = element.offset
+                if offset not in elements_by_offset:
+                    elements_by_offset[offset] = []
+                elements_by_offset[offset].append(element)
+
+            # Sort the offsets in ascending order
+            sorted_offsets = sorted(elements_by_offset.keys())
+
+            notss = []
+
+            # Iterate through the sorted offsets and collect notes and rests at each point in time
+            for offset in sorted_offsets:
+                elements = elements_by_offset[offset]
+                notes_and_rests = []
+                nots=[]
+
+                for element in elements:
+                    if isinstance(element, music21.note.Note):
+                        pitch = element.pitch
+                        parts = re.split(r'(\d+)', str(pitch))
+                        modified_item = ''.join(parts)
+                        pitch = modified_item
+                        notes_and_rests.append(f"{pitch}") # {element.duration.quarterLength}
+                        nots.append(f"{pitch} {element.duration.quarterLength}")
+
+                    elif isinstance(element, music21.chord.Chord):
+                        for chord_note in element:
+                            chord_pitch = chord_note.pitch
+                            parts = re.split(r'(\d+)', str(chord_pitch))
+                            modified_item = ''.join(parts)
+                            chord_pitch = modified_item
+                            notes_and_rests.append(f"{chord_pitch}") # {chord_note.duration.quarterLength}
+                            nots.append(f"{chord_pitch} {chord_note.duration.quarterLength}")
+
+                    elif isinstance(element, music21.note.Rest):
+                        pass
+                        # notes_and_rests.append(f"Rest Duration: {element.duration.quarterLength}")
+
+                notes_and_rests_by_time.append(notes_and_rests)
+                notes_and_rests_by_time_.append(nots)
+                notes = notes_and_rests_by_time_
+
+                data = notes_and_rests_by_time_
+                copy_notes = notes_and_rests_by_time_.copy()
+                data = notes
+                # Function to extract note and octave
+                def get_note_octave(note):
+                    parts = note.split()
+                    note_part = parts[0][:-1]
+                    octave = int(parts[0][-1])
+                    return note_part, octave
+
+                # Sort each sublist by octave and then by note alphabetically
+                sorted_data = [
+                    sorted(sublist, key=lambda x: (get_note_octave(x)[1], get_note_octave(x)[0]), reverse=True)
+                    for sublist in data
+                ]
+
+                sorted_data
+    #
+                data = sorted_data
+                data = notes_and_rests_by_time_
+
+                # Function to remove duplicates if sublist has more than 4 members
+                def remove_excess_duplicates(data):
+                    new_data = []
+                    for sublist in data:
+                        if len(sublist) > 4:
+                            seen = set()
+                            filtered = []
+                            for item in sublist:
+                                if item not in seen:
+                                    seen.add(item)
+                                    filtered.append(item)
+                                elif len(filtered) < 4:
+                                    filtered.append(item)
+                            new_data.append(filtered[:4])
+                        else:
+                            new_data.append(sublist)
+                    return new_data
+
+                result = remove_excess_duplicates(data)
+                # print(result)
+                notes_and_rests_by_time_ = result
+
+
+
+
+            for sublist in notes:
+                if len(sublist) < 4:
+                    print("A sublist has fewer than 4 items:", sublist)
+                    # Create DataFrame
+                    df = pd.DataFrame(notes, columns=['Note1', 'Note2', 'Note3', 'Note4'])
+
+                    # Function to extract duration from note string
+                    def extract_duration(note):
+                        if isinstance(note, str):
+                            parts = note.split()
+                            if len(parts) == 2 and parts[1].replace('.', '').isdigit():
+                                return float(parts[1])
+                        return 0.0
+
+                    # Add cumulative duration columns
+                    for col in df.columns:
+                        df[col + '_Cumulative'] = df[col].apply(extract_duration).cumsum()
+
+                    # Display the updated DataFrame
+                    print(df)
+                    # Get the index of the first sublist with less than 4 members
+                    index = next((i for i, sublist in enumerate(notes) if len(sublist) < 4), None)
+                    index = index -1
+                    print("Index of the first sublist with less than 4 members:", index)
+                    # Function to check the next sublist after the given index
+                    def check_next_sublist_length(notes, index):
+                        if index + 1 < len(notes):
+                            next_sublist = notes[index + 1]
+                            return len(next_sublist) < 4
+                        return False
+
+                    # Check the next sublist
+                    has_less_than_4_items = check_next_sublist_length(notes, index)
+                    print(f"The next sublist after index {index} has less than 4 items: {has_less_than_4_items}")
+                    # Retrieve the highest cumulative duration and corresponding column names
+                    def get_highest_cumulative_info(df, index):
+                        if index >= 0:
+                            # Get the cumulative duration values for the specified row
+                            cumulative_values = df.iloc[index, df.columns.str.endswith('_Cumulative')]
+                            # Find the maximum value
+                            max_duration = cumulative_values.max()
+                            # Get the column names with the maximum value
+                            columns_with_max_duration = cumulative_values[cumulative_values == max_duration].index.tolist()
+                            return max_duration, columns_with_max_duration
+                        return None, []
+
+                    # Execute the function
+                    max_duration, columns_with_max_duration = get_highest_cumulative_info(df, index)
+
+                    print(f"Highest cumulative duration at index {index}: {max_duration}")
+                    print("Column names with this highest cumulative duration:", columns_with_max_duration)
+                    # Define the lists
+                    list1 = ['Note1_Cumulative', 'Note2_Cumulative', 'Note3_Cumulative', 'Note4_Cumulative']
+                    list2 = columns_with_max_duration
+
+                    # Retrieve members in list1 that are not in list2
+                    result = [item for item in list1 if item not in list2]
+
+                    print(result)  # Output: ['Note2_Cumulative']
+
+                    def replace_cumulative_notes(lst):
+                        replacements = {
+                            'Note1_Cumulative': 0,
+                            'Note2_Cumulative': 1,
+                            'Note3_Cumulative': 2,
+                            'Note4_Cumulative': 3
+                        }
+
+                        return [replacements.get(item, item) for item in lst]
+
+                    # Example usage
+                    input_list = ['Note1_Cumulative', 'Note2_Cumulative', 'Other', 'Note3_Cumulative', 'Note4_Cumulative']
+                    input_list = result
+                    output_list = replace_cumulative_notes(input_list)
+                    print(output_list)
+                    original_list =notes[index + 1]
+                    desired_length = 4
+
+                    # Create a new list with '-' as placeholders
+                    modified_list = ['-'] * desired_length
+
+                    # Insert the original list elements at their respective indexes
+                    indices = output_list
+
+                    # Ensure the indices length matches the original_list length
+                    for i, item in enumerate(original_list):
+                        if i < len(indices):
+                            modified_list[indices[i]] = item
+
+                    print(modified_list)
+
+                    # New value to replace notes[6]
+                    new_value = modified_list
+                    # Replace the element at index 6
+                    notes[index+1] = new_value
+
+                    # Print the updated list
+                    print('kofi')
+                    print(notes)
+                    aaa = notes.copy()
+                else:
+                    aaa = notes_and_rests_by_time_.copy()
+            def note_to_solfa(note, key):
+                solfa_mappings = {
+                'C major': {
+                    'C': 'd', 'D': 'r', 'E': 'm', 'F': 'f', 'G': 's',
+                    'A': 'l', 'B': 't', 'C#': 'di', 'D#': 'ri', 'F#': 'fi',
+                    'G#': 'si', 'A#': 'li'
+                },
+                'C# major': {
+                    'C#': 'd', 'D#': 'r', 'E#': 'm', 'F#': 'f', 'G#': 's',
+                    'A#': 'l', 'B#': 't', 'D': 'ra', 'F': 'fa', 'A': 'la'
+                },
+                'B minor': {
+                    'B': 'd', 'C#': 'r', 'D': 'm', 'E': 'f', 'F#': 's',
+                    'G': 'l', 'A': 't', 'E#': 'fi', 'A#': 'ti', 'C': 'ma'
+                },
+                'A minor': {
+                    'A': 'd', 'B': 'r', 'C': 'm', 'D': 'f', 'E': 's',
+                    'F': 'l', 'G': 't', 'C#': 'mi', 'D#': 'fi', 'G#': 'te'
+                },
+                'A major': {
+                    'A': 'd', 'B': 'r', 'C#': 'm', 'D': 'f', 'E': 's',
+                    'F#': 'l', 'G#': 't', 'D#': 'fi', 'G': 'le'
+                },
+                'D minor': {
+                    'D': 'd', 'E': 'r', 'F': 'm', 'G': 'f', 'A': 's',
+                    'B-': 'l', 'C': 't', 'E-': 'ri', 'A-': 'se'
+                },
+                'G minor': {
+                    'G': 'd', 'A': 'r', 'B-': 'm', 'C': 'f', 'D': 's',
+                    'E-': 'l', 'F': 't', 'A-': 'fi', 'D#': 'si'
+                },
+                'G major': {
+                    'G': 'd', 'A': 'r', 'B': 'm', 'C': 'f', 'D': 's',
+                    'E': 'l', 'F#': 't', 'F': 'fi', 'C#': 'fi'
+                },
+                'E- major': {
+                    'E-': 'd', 'F': 'r', 'G': 'm', 'A-': 'f', 'B-': 's',
+                    'C': 'l', 'D': 't', 'A': 'se', 'B': 'ma'
+                },
+                'c minor': {
+                    'C': 'd', 'D': 'r', 'E-': 'm', 'F': 'f', 'G': 's',
+                    'A-': 'l', 'B-': 't', 'E': 'mi', 'A': 'li'
+                },
+                'B- major': {
+                    'B-': 'd', 'C': 'r', 'D': 'm', 'E-': 'f', 'F': 's',
+                    'G': 'l', 'A': 't', 'D#': 'ra', 'F#': 'si'
+                },
+                'A- major': {
+                    'A-': 'd', 'B-': 'r', 'C': 'm', 'D-': 'f', 'E-': 's',
+                    'F': 'l', 'G': 't', 'D': 'ma', 'E': 'li'
+                },
+                'D major': {
+                    'D': 'd', 'E': 'r', 'F#': 'm', 'G': 'f', 'A': 's',
+                    'B': 'l', 'C#': 't', 'G#': 'ma', 'E#': 'ri'
+                },
+                'B- minor': {
+                    'B-': 'd', 'C': 'r', 'D-': 'm', 'E-': 'f', 'F': 's',
+                    'G-': 'l', 'A-': 't', 'E': 'mi', 'G': 'fi'
+                },
+                'F minor': {
+                    'F': 'd', 'G': 'r', 'A-': 'm', 'B-': 'f', 'C': 's',
+                    'D-': 'l', 'E-': 't', 'B': 'si', 'G-': 'fi'
+                },
+                'E minor': {
+                    'E': 'd', 'F#': 'r', 'G': 'm', 'A': 'f', 'B': 's',
+                    'C': 'l', 'D': 't', 'A#': 'li', 'G#': 'si'
+                },
+                'F major': {
+                    'F': 'd', 'G': 'r', 'A': 'm', 'B-': 'f', 'C': 's',
+                    'D': 'l', 'E': 't', 'C#': 'fi', 'G#': 'le'
+                },
+                'E major': {
+                    'E': 'd', 'F#': 'r', 'G#': 'm', 'A': 'f', 'B': 's',
+                    'C#': 'l', 'D#': 't', 'A#': 'li', 'B#': 'si'
+                }
+            }
+
+                mapping = solfa_mappings[key]
+                if note == '-':
+                    return '-'
+                note_name, duration = note.split()
+                note_name = note_name[:-1]  # Remove the octave number
+                solfa = mapping.get(note_name, note_name)
+                return f"{solfa} {duration}"
+
+            notes_ = notes
+            # Get the key signature
+            key_signature = score.analyze('key')
+    #
+            def capitalize_first_letter(s):
+                if s and s[0].islower():
+                    return s[0].upper() + s[1:]
+                return s
+
+            # Example usage
+            strin = str(key_signature)
+            capitalized_string = capitalize_first_letter(strin)
+            music_key = capitalized_string
+    #
+            print(f"The key of the piece is: {key_signature}")
+            solfa_notes = [[note_to_solfa(note, key=capitalized_string) for note in chord] for chord in notes_]
+            chords = []
+            for chord in solfa_notes:
+                chords.append(chord)
+                print(chord)
+
+
+            notes = chords
+
+            # Remove sublists with all members being '-'
+            filtered_notes = [sublist for sublist in notes if sublist.count('-') < 4]
+
+            filtered_notes
+            new_data = filtered_notes.copy()
+            data = [(index + 1, *row) for index, row in enumerate(new_data)]
+
+            # data = [(index + 1, *row) for index, row in enumerate(chords)]
+
+
+            selected_voice_part = request.GET.get('voice_part')
+            if selected_voice_part:
+                if selected_voice_part == 'All':
+                    pass
+                else:
+
+
+                    voice_map = {
+                        'Soprano': 0,
+                        'Alto': 1,
+                        'Tenor': 2,
+                        'Bass': 3
+                    }
+
+                    kogi = selected_voice_part
+                    voice_num = voice_map.get(kogi)
+
+                    print(voice_num)  # Output will be 0
+
+                    print('kpoooooooooo')
+                    print(selected_voice_part)
+                    # Given music notes
+                    # music_notes = aaa
+                    try:
+                        music_notes = notes_
+                    except NameError:
+                        music_notes = notes_.copy()
+                    # Create a stream
+                    melody = stream.Stream()
+
+                    # Extract and add the first note from each sublist
+                    for sublist in music_notes:
+                        note_str = sublist[voice_num]  # First member of each sublist
+                        if note_str == '-':
+                            pass
+                        else:
+
+                            pitch, duration = note_str.split()  # Split into pitch and duration
+                            duration = float(duration)  # Convert duration to float
+                            # Create a note object and add it to the stream
+                            n = note.Note(pitch)
+                            n.quarterLength = duration
+                            melody.append(n)
+
+                    # Show (and play) the stream
+                    # melody.show('midi')
+
+                    def generate_random_word():
+                        letters = string.ascii_lowercase
+                        return ''.join(random.choice(letters) for _ in range(4))
+
+                    random_word = generate_random_word()
+                    midi_file_path = f"/home/kofi532/asedachorale/media/{random_word}.mid"
+                    # score.write('midi', fp=midi_file_path)
+                    request.session['random_word'] = random_word
+                    midi_messages = 1
+                    path = f"/home/kofi532/asedachorale/adom/templates/tunes/{hymn_number}.xml"
+                    # score = music21.converter.parse(path)
+                    melody.write('midi', fp=midi_file_path)
+                    # hymn_data = fetch_hymn_from_file_ang(hymn_number)
+
+    #
+            if hymn_data:
+                hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+                aa = type(hymn_data)
+                # lol
+                return render(request, 'hymn_display.html', {'hymn_data': hymn_data, 'selected_voice_part': selected_voice_part, 'music_key': music_key,'data':data,  'hymn_numbers': hymn_numbers})
+            else:
+                return render(request, 'hymn_display.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
         else:
-            return render(request, 'hymn_display.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
-    else:
-        return render(request, 'hymn_display.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+            return render(request, 'hymn_display.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+
+    except Exception as e:
+        print(e)  # Optionally log the error for debugging purposes
+        return HttpResponseNotFound('Sorry, this page is not available.')
 
 def fetch_hymn_from_file(hymn_number):
     file_path =   r"/home/kofi532/asedachorale/adom/templates/mbh.txt" # Adjust this path as per your file location
@@ -1526,53 +1913,433 @@ def fetch_hymn_from_file(hymn_number):
 
 
 def display_hymn_ang(request):
-    def extract_html_file_names(directory):
-        # List all files ending with .html
-        html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
+    try:
+        def extract_html_file_names(directory):
+            # List all files ending with .html
+            html_files = [file for file in os.listdir(directory) if file.endswith('.html')]
 
-        # Extract base names without extension
-        base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
+            # Extract base names without extension
+            base_names = [re.match(r'(.+?)\.html', file).group(1) for file in html_files]
 
-        # Sort using a custom key
-        def custom_sort_key(name):
-            # Split into parts: numbers and non-numbers
-            parts = re.split(r'(\d+)', name)
-            # Convert numeric parts to integers for correct sorting
-            parts = [int(part) if part.isdigit() else part for part in parts]
-            return parts
+            # Sort using a custom key
+            def custom_sort_key(name):
+                # Split into parts: numbers and non-numbers
+                parts = re.split(r'(\d+)', name)
+                # Convert numeric parts to integers for correct sorting
+                parts = [int(part) if part.isdigit() else part for part in parts]
+                return parts
 
-        sorted_base_names = sorted(base_names, key=custom_sort_key)
-        return sorted_base_names
+            sorted_base_names = sorted(base_names, key=custom_sort_key)
+            return sorted_base_names
 
-    # Example usage:
-    directory_path =  r"/home/kofi532/asedachorale/adom/templates/lyrics_ang" # Replace with your directory path
-    html_files_list = extract_html_file_names(directory_path)
-    hymn_numbers = html_files_list  # Define the list of hymn numbers
-    hymn_number = request.GET.get('hymn_number')
+        directory_path = r"/home/kofi532/asedachorale/adom/templates/lyrics_ang"  # Replace with your directory path
+        html_files_list = extract_html_file_names(directory_path)
+        hymn_numbers = html_files_list  # Define the list of hymn numbers
+        hymn_number = request.GET.get('hymn_number')
 
-    if hymn_number:
-        def generate_random_word():
-            letters = string.ascii_lowercase
-            return ''.join(random.choice(letters) for _ in range(4))
+        if hymn_number:
+            def generate_random_word():
+                letters = string.ascii_lowercase
+                return ''.join(random.choice(letters) for _ in range(4))
 
-        random_word = generate_random_word()
-        midi_file_path =  r"/home/kofi532/asedachorale/aseda/media/{random_word}.mid"
-        # score.write('midi', fp=midi_file_path)
-        request.session['random_word'] = random_word
-        midi_messages = 1
-        path =  r"/home/kofi532/asedachorale/adom/templates/tunes_ang/{hymn_number}.xml"
-        score = music21.converter.parse(path)
-        score.write('midi', fp=midi_file_path)
-        hymn_data = fetch_hymn_from_file_ang(hymn_number)
-        if hymn_data:
-            hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
-            aa = type(hymn_data)
-            # lol
-            return render(request, 'hymn_display_ang.html', {'hymn_data': hymn_data, 'hymn_numbers': hymn_numbers})
+            random_word = generate_random_word()
+            midi_file_path = f"/home/kofi532/asedachorale/media/{random_word}.mid"
+            request.session['random_word'] = random_word
+            path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{hymn_number}.xml"
+            score = music21.converter.parse(path)
+            score.write('midi', fp=midi_file_path)
+            hymn_data = fetch_hymn_from_file_ang(hymn_number)
+            # Initialize a list to store notes and rests at each point in time
+            notes_and_rests_by_time = []
+            notes_and_rests_by_time_ = []
+
+            # Get all the notes, chords, and rests from the score
+            all_notes = score.flat.getElementsByClass(music21.note.GeneralNote)
+
+            # Create a dictionary to group elements by their starting offset
+            elements_by_offset = {}
+
+            # Iterate through the notes, chords, and rests and group them by offset
+            for element in all_notes:
+                offset = element.offset
+                if offset not in elements_by_offset:
+                    elements_by_offset[offset] = []
+                elements_by_offset[offset].append(element)
+
+            # Sort the offsets in ascending order
+            sorted_offsets = sorted(elements_by_offset.keys())
+
+            notss = []
+
+            # Iterate through the sorted offsets and collect notes and rests at each point in time
+            for offset in sorted_offsets:
+                elements = elements_by_offset[offset]
+                notes_and_rests = []
+                nots=[]
+
+                for element in elements:
+                    if isinstance(element, music21.note.Note):
+                        pitch = element.pitch
+                        parts = re.split(r'(\d+)', str(pitch))
+                        modified_item = ''.join(parts)
+                        pitch = modified_item
+                        notes_and_rests.append(f"{pitch}") # {element.duration.quarterLength}
+                        nots.append(f"{pitch} {element.duration.quarterLength}")
+
+                    elif isinstance(element, music21.chord.Chord):
+                        for chord_note in element:
+                            chord_pitch = chord_note.pitch
+                            parts = re.split(r'(\d+)', str(chord_pitch))
+                            modified_item = ''.join(parts)
+                            chord_pitch = modified_item
+                            notes_and_rests.append(f"{chord_pitch}") # {chord_note.duration.quarterLength}
+                            nots.append(f"{chord_pitch} {chord_note.duration.quarterLength}")
+
+                    elif isinstance(element, music21.note.Rest):
+                        pass
+                        # notes_and_rests.append(f"Rest Duration: {element.duration.quarterLength}")
+
+                notes_and_rests_by_time.append(notes_and_rests)
+                notes_and_rests_by_time_.append(nots)
+                notes = notes_and_rests_by_time_
+
+                data = notes_and_rests_by_time_
+                copy_notes = notes_and_rests_by_time_.copy()
+                data = notes
+                # Function to extract note and octave
+                def get_note_octave(note):
+                    parts = note.split()
+                    note_part = parts[0][:-1]
+                    octave = int(parts[0][-1])
+                    return note_part, octave
+
+                # Sort each sublist by octave and then by note alphabetically
+                sorted_data = [
+                    sorted(sublist, key=lambda x: (get_note_octave(x)[1], get_note_octave(x)[0]), reverse=True)
+                    for sublist in data
+                ]
+
+                sorted_data
+    #
+                data = sorted_data
+                data = notes_and_rests_by_time_
+                # Function to remove duplicates if sublist has more than 4 members
+                def remove_excess_duplicates(data):
+                    new_data = []
+                    for sublist in data:
+                        if len(sublist) > 4:
+                            seen = set()
+                            filtered = []
+                            for item in sublist:
+                                if item not in seen:
+                                    seen.add(item)
+                                    filtered.append(item)
+                                elif len(filtered) < 4:
+                                    filtered.append(item)
+                            new_data.append(filtered[:4])
+                        else:
+                            new_data.append(sublist)
+                    return new_data
+
+                result = remove_excess_duplicates(data)
+                # print(result)
+                notes_and_rests_by_time_ = result
+
+
+            for sublist in notes:
+                if len(sublist) < 4:
+                    print("A sublist has fewer than 4 items:", sublist)
+                    # Create DataFrame
+                    df = pd.DataFrame(notes, columns=['Note1', 'Note2', 'Note3', 'Note4'])
+
+                    # Function to extract duration from note string
+                    def extract_duration(note):
+                        if isinstance(note, str):
+                            parts = note.split()
+                            if len(parts) == 2 and parts[1].replace('.', '').isdigit():
+                                return float(parts[1])
+                        return 0.0
+
+                    # Add cumulative duration columns
+                    for col in df.columns:
+                        df[col + '_Cumulative'] = df[col].apply(extract_duration).cumsum()
+
+                    # Display the updated DataFrame
+                    print(df)
+                    # Get the index of the first sublist with less than 4 members
+                    index = next((i for i, sublist in enumerate(notes) if len(sublist) < 4), None)
+                    index = index -1
+                    print("Index of the first sublist with less than 4 members:", index)
+                    # Function to check the next sublist after the given index
+                    def check_next_sublist_length(notes, index):
+                        if index + 1 < len(notes):
+                            next_sublist = notes[index + 1]
+                            return len(next_sublist) < 4
+                        return False
+
+                    # Check the next sublist
+                    has_less_than_4_items = check_next_sublist_length(notes, index)
+                    print(f"The next sublist after index {index} has less than 4 items: {has_less_than_4_items}")
+                    # Retrieve the highest cumulative duration and corresponding column names
+                    def get_highest_cumulative_info(df, index):
+                        if index >= 0:
+                            # Get the cumulative duration values for the specified row
+                            cumulative_values = df.iloc[index, df.columns.str.endswith('_Cumulative')]
+                            # Find the maximum value
+                            max_duration = cumulative_values.max()
+                            # Get the column names with the maximum value
+                            columns_with_max_duration = cumulative_values[cumulative_values == max_duration].index.tolist()
+                            return max_duration, columns_with_max_duration
+                        return None, []
+
+                    # Execute the function
+                    max_duration, columns_with_max_duration = get_highest_cumulative_info(df, index)
+
+                    print(f"Highest cumulative duration at index {index}: {max_duration}")
+                    print("Column names with this highest cumulative duration:", columns_with_max_duration)
+                    # Define the lists
+                    list1 = ['Note1_Cumulative', 'Note2_Cumulative', 'Note3_Cumulative', 'Note4_Cumulative']
+                    list2 = columns_with_max_duration
+
+                    # Retrieve members in list1 that are not in list2
+                    result = [item for item in list1 if item not in list2]
+
+                    print(result)  # Output: ['Note2_Cumulative']
+
+                    def replace_cumulative_notes(lst):
+                        replacements = {
+                            'Note1_Cumulative': 0,
+                            'Note2_Cumulative': 1,
+                            'Note3_Cumulative': 2,
+                            'Note4_Cumulative': 3
+                        }
+
+                        return [replacements.get(item, item) for item in lst]
+
+                    # Example usage
+                    input_list = ['Note1_Cumulative', 'Note2_Cumulative', 'Other', 'Note3_Cumulative', 'Note4_Cumulative']
+                    input_list = result
+                    output_list = replace_cumulative_notes(input_list)
+                    print(output_list)
+                    original_list =notes[index + 1]
+                    desired_length = 4
+
+                    # Create a new list with '-' as placeholders
+                    modified_list = ['-'] * desired_length
+
+                    # Insert the original list elements at their respective indexes
+                    indices = output_list
+
+                    # Ensure the indices length matches the original_list length
+                    for i, item in enumerate(original_list):
+                        if i < len(indices):
+                            modified_list[indices[i]] = item
+
+                    print(modified_list)
+
+                    # New value to replace notes[6]
+                    new_value = modified_list
+                    # Replace the element at index 6
+                    notes[index+1] = new_value
+
+                    # Print the updated list
+                    print('kofi')
+                    print(notes)
+                    aaa = notes.copy()
+                else:
+                    aaa = notes_and_rests_by_time_.copy()
+
+            def note_to_solfa(note, key):
+                solfa_mappings = {
+                'C major': {
+                    'C': 'd', 'D': 'r', 'E': 'm', 'F': 'f', 'G': 's',
+                    'A': 'l', 'B': 't', 'C#': 'di', 'D#': 'ri', 'F#': 'fi',
+                    'G#': 'si', 'A#': 'li'
+                },
+                'C# major': {
+                    'C#': 'd', 'D#': 'r', 'E#': 'm', 'F#': 'f', 'G#': 's',
+                    'A#': 'l', 'B#': 't', 'D': 'ra', 'F': 'fa', 'A': 'la'
+                },
+                'B minor': {
+                    'B': 'd', 'C#': 'r', 'D': 'm', 'E': 'f', 'F#': 's',
+                    'G': 'l', 'A': 't', 'E#': 'fi', 'A#': 'ti', 'C': 'ma'
+                },
+                'A minor': {
+                    'A': 'd', 'B': 'r', 'C': 'm', 'D': 'f', 'E': 's',
+                    'F': 'l', 'G': 't', 'C#': 'mi', 'D#': 'fi', 'G#': 'te'
+                },
+                'A major': {
+                    'A': 'd', 'B': 'r', 'C#': 'm', 'D': 'f', 'E': 's',
+                    'F#': 'l', 'G#': 't', 'D#': 'fi', 'G': 'le'
+                },
+                'D minor': {
+                    'D': 'd', 'E': 'r', 'F': 'm', 'G': 'f', 'A': 's',
+                    'B-': 'l', 'C': 't', 'E-': 'ri', 'A-': 'se'
+                },
+                'G minor': {
+                    'G': 'd', 'A': 'r', 'B-': 'm', 'C': 'f', 'D': 's',
+                    'E-': 'l', 'F': 't', 'A-': 'fi', 'D#': 'si'
+                },
+                'G major': {
+                    'G': 'd', 'A': 'r', 'B': 'm', 'C': 'f', 'D': 's',
+                    'E': 'l', 'F#': 't', 'F': 'fi', 'C#': 'fi'
+                },
+                'E- major': {
+                    'E-': 'd', 'F': 'r', 'G': 'm', 'A-': 'f', 'B-': 's',
+                    'C': 'l', 'D': 't', 'A': 'se', 'B': 'ma'
+                },
+                'c minor': {
+                    'C': 'd', 'D': 'r', 'E-': 'm', 'F': 'f', 'G': 's',
+                    'A-': 'l', 'B-': 't', 'E': 'mi', 'A': 'li'
+                },
+                'B- major': {
+                    'B-': 'd', 'C': 'r', 'D': 'm', 'E-': 'f', 'F': 's',
+                    'G': 'l', 'A': 't', 'D#': 'ra', 'F#': 'si'
+                },
+                'A- major': {
+                    'A-': 'd', 'B-': 'r', 'C': 'm', 'D-': 'f', 'E-': 's',
+                    'F': 'l', 'G': 't', 'D': 'ma', 'E': 'li'
+                },
+                'D major': {
+                    'D': 'd', 'E': 'r', 'F#': 'm', 'G': 'f', 'A': 's',
+                    'B': 'l', 'C#': 't', 'G#': 'ma', 'E#': 'ri'
+                },
+                'B- minor': {
+                    'B-': 'd', 'C': 'r', 'D-': 'm', 'E-': 'f', 'F': 's',
+                    'G-': 'l', 'A-': 't', 'E': 'mi', 'G': 'fi'
+                },
+                'F minor': {
+                    'F': 'd', 'G': 'r', 'A-': 'm', 'B-': 'f', 'C': 's',
+                    'D-': 'l', 'E-': 't', 'B': 'si', 'G-': 'fi'
+                },
+                'E minor': {
+                    'E': 'd', 'F#': 'r', 'G': 'm', 'A': 'f', 'B': 's',
+                    'C': 'l', 'D': 't', 'A#': 'li', 'G#': 'si'
+                },
+                'F major': {
+                    'F': 'd', 'G': 'r', 'A': 'm', 'B-': 'f', 'C': 's',
+                    'D': 'l', 'E': 't', 'C#': 'fi', 'G#': 'le'
+                },
+                'E major': {
+                    'E': 'd', 'F#': 'r', 'G#': 'm', 'A': 'f', 'B': 's',
+                    'C#': 'l', 'D#': 't', 'A#': 'li', 'B#': 'si'
+                }
+            }
+
+                mapping = solfa_mappings[key]
+                if note == '-':
+                    return '-'
+                note_name, duration = note.split()
+                note_name = note_name[:-1]  # Remove the octave number
+                solfa = mapping.get(note_name, note_name)
+                return f"{solfa} {duration}"
+
+            notes_ = notes
+            # Get the key signature
+            key_signature = score.analyze('key')
+    #
+            def capitalize_first_letter(s):
+                if s and s[0].islower():
+                    return s[0].upper() + s[1:]
+                return s
+
+            # Example usage
+            strin = str(key_signature)
+            capitalized_string = capitalize_first_letter(strin)
+            music_key = capitalized_string
+    #
+            print(f"The key of the piece is: {key_signature}")
+            solfa_notes = [[note_to_solfa(note, key=capitalized_string) for note in chord] for chord in notes_]
+            chords = []
+            for chord in solfa_notes:
+                chords.append(chord)
+                print(chord)
+            notes = chords
+
+            # Remove sublists with all members being '-'
+            filtered_notes = [sublist for sublist in notes if sublist.count('-') < 4]
+
+            filtered_notes
+            new_data = filtered_notes.copy()
+            data = [(index + 1, *row) for index, row in enumerate(new_data)]
+
+
+
+            selected_voice_part = request.GET.get('voice_part')
+
+            if selected_voice_part:
+                if selected_voice_part == 'All':
+                    pass
+                else:
+
+                    voice_map = {
+                        'Soprano': 0,
+                        'Alto': 1,
+                        'Tenor': 2,
+                        'Bass': 3
+                    }
+
+                    kogi = selected_voice_part
+                    voice_num = voice_map.get(kogi)
+
+                    print(voice_num)  # Output will be 0
+
+                    print('kpoooooooooo')
+                    print(selected_voice_part)
+                    # Given music notes
+                    try:
+                        music_notes = notes_
+                    except NameError:
+                        music_notes = notes_.copy()
+                    # Create a stream
+                    melody = stream.Stream()
+
+                    # Extract and add the first note from each sublist
+                    for sublist in music_notes:
+                        note_str = sublist[voice_num]  # First member of each sublist
+                        if note_str == '-':
+                            pass
+                        else:
+
+                            pitch, duration = note_str.split()  # Split into pitch and duration
+                            duration = float(duration)  # Convert duration to float
+                            # Create a note object and add it to the stream
+                            n = note.Note(pitch)
+                            n.quarterLength = duration
+                            melody.append(n)
+
+                    # Show (and play) the stream
+                    # melody.show('midi')
+
+                    def generate_random_word():
+                        letters = string.ascii_lowercase
+                        return ''.join(random.choice(letters) for _ in range(4))
+
+                    random_word = generate_random_word()
+                    midi_file_path = f"/home/kofi532/asedachorale/media/{random_word}.mid"
+                    # score.write('midi', fp=midi_file_path)
+                    request.session['random_word'] = random_word
+                    midi_messages = 1
+                    path = f"/home/kofi532/asedachorale/adom/templates/tunes_ang/{hymn_number}.xml"
+                    # score = music21.converter.parse(path)
+                    melody.write('midi', fp=midi_file_path)
+                    # hymn_data = fetch_hymn_from_file_ang(hymn_number)
+
+    #
+            if hymn_data:
+                hymn_data = re.sub(r'(?<!HYMN\s)(\d+)(?=\s)', r'<br><br> \1', hymn_data)
+                aa = type(hymn_data)
+                # lol
+                return render(request, 'hymn_display_ang.html', {'hymn_data': hymn_data, 'selected_voice_part': selected_voice_part,'music_key': music_key,'data':data,  'hymn_numbers': hymn_numbers})
+            else:
+                return render(request, 'hymn_display_ang.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
         else:
-            return render(request, 'hymn_display_ang.html', {'error_message': 'Hymn not found.', 'hymn_numbers': hymn_numbers})
-    else:
-        return render(request, 'hymn_display_ang.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+            return render(request, 'hymn_display_ang.html', {'error_message': 'Please select or enter a hymn number.', 'hymn_numbers': hymn_numbers})
+
+
+    except Exception as e:
+        print(e)  # Optionally log the error for debugging purposes
+        return HttpResponseNotFound('Sorry, this page is not available.')
 
 def fetch_hymn_from_file_ang(hymn_number):
     file_path =  r"/home/kofi532/asedachorale/adom/templates/ang.txt"  # Adjust this path as per your file location
@@ -1604,4 +2371,77 @@ def fetch_hymn_from_file_ang(hymn_number):
             return formatted_hymn
         else:
             return None
+
+
+from .forms import HymnSearchForm
+
+HYMN_FILES = {
+    'A & M': r"/home/kofi532/asedachorale/adom/templates/ang.txt",
+    'M.H.B': r'/home/kofi532/asedachorale/adom/templates/mbh.txt',
+    'P.H.B': r"/home/kofi532/asedachorale/adom/templates/presby.txt",
+}
+
+def search_hymns(query):
+    results = []
+    query_lower = query.lower()
+
+    for source, filepath in HYMN_FILES.items():
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+            hymns = content.split('HYMN ')
+
+            for hymn in hymns:
+                if query_lower in hymn.lower():
+                    hymn_number = 'HYMN ' + hymn.split('\n')[0].strip()
+                    hymn_content = '\n'.join(hymn.split('\n')[1:]).strip()
+                    results.append((source, hymn_number, hymn_content))
+
+    results = sorted(results, key=lambda x: x[1])[:5]
+    return results
+
+def hymn_search_view(request):
+    try:
+        form = HymnSearchForm()
+        results = []
+        if request.method == 'POST':
+            form = HymnSearchForm(request.POST)
+            if form.is_valid():
+                query = form.cleaned_data['query']
+                results = search_hymns(query)
+                for i, (source, hymn_number, hymn_content) in enumerate(results):
+                    hymn_number_cleaned = hymn_number.split()[1]
+                    if source == 'M.H.B':
+                        results[i] = (source, hymn_number, hymn_content, f"/mhb/?hymn_number={hymn_number_cleaned}")
+                    elif source == 'P.H.B':
+                        results[i] = (source, hymn_number, hymn_content, f"/presby/?hymn_number={hymn_number_cleaned}")
+                    elif source == 'A & M':
+                        results[i] = (source, hymn_number, hymn_content, f"/anglican/?hymn_number={hymn_number_cleaned}")
+
+        return render(request, 'search.html', {'form': form, 'results': results})
+
+    except Exception as e:
+        print(e)  # Optionally log the error for debugging purposes
+        return HttpResponseNotFound('Sorry, this page is not available.')
+
+def hymn_detail_view(request, source, hymn_number):
+    try:
+        filepath = HYMN_FILES.get(source)
+        hymn_content = ''
+        if filepath:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+                hymns = content.split('HYMN ')
+                for hymn in hymns:
+                    if hymn.startswith(hymn_number):
+                        hymn_content = '\n'.join(hymn.split('\n')[1:]).strip()
+                        break
+
+        if hymn_content:
+            return render(request, 'search.html', {'source': source, 'hymn_number': hymn_number, 'hymn_content': hymn_content})
+        else:
+            return HttpResponseNotFound('Sorry, this page is not available.')
+
+    except Exception as e:
+        print(e)  # Optionally log the error for debugging purposes
+        return HttpResponseNotFound('Sorry, this page is not available.')
 

@@ -7,6 +7,10 @@
         max-height: 300px;  /* Adjust the height as needed */
         overflow-y: auto;
     }
+    .btn-hymn-number {
+        min-width: 80px;  /* Adjust width as needed */
+        margin-bottom: 10px;
+    }
 </style>
 
 <div class="container">
@@ -46,7 +50,7 @@
                         {% for number in hymn_numbers %}
                             <form action="{% url 'display_hymn_presby' %}" method="get" style="display: inline;">
                                 <input type="hidden" name="hymn_number" value="{{ number }}">
-                                <button type="submit" class="btn btn-outline-secondary mr-2 mb-2">P.H.B {{ number }}</button>
+                                <button type="submit" class="btn btn-outline-secondary btn-hymn-number">P.H.B {{ number }}</button>
                             </form>
                         {% endfor %}
                     </div>

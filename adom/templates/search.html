@@ -1,32 +1,53 @@
 {% extends 'jot.html' %}
-
 {% load static %}
 
-
-
 {% block content %}
-    <div class="container">
-        <br><br>
-        <form method="post" action="{% url 'search_hymn' %}">
-            {% csrf_token %}
-            <div class="form-group">
-                <label for="text_input">Enter first line of hymn:</label>
-                <input type="text" class="form-control" id="text_input" name="text_input">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <br>
+    <!-- Home page content -->
+    <div class="text-center mt-5 p-4" style="border: 5px solid #8d5524; background-color: #fdf5e6; border-radius: 10px;">
+        <!-- Properly centered heading with responsive font size -->
+        <h1 class="display-4 text-dark" style="font-size: 2.5rem; word-wrap: break-word;">Welcome to Asedachorale</h1>
 
-        {% for i, j in mylist %}
-            <div class="card">
-                <div class="card-body">
-                    <a href="{% url 'handle_click' %}?value_to_pass={{i}}" class="card-link">M.H.B {{i}}</a><br>
-                    <p>{{j}}</p>
-                </div>
-            </div>
-        {% endfor %}
+        <!-- Two elegant and colorful buttons -->
+        <div class="d-flex justify-content-center flex-wrap mt-4">
+            <a href="/mhb/" class="btn btn-primary btn-lg mx-2 mb-2" style="min-width: 200px;">METHODIST HYMN BOOK (M.H.B)</a>
+            <a href="/anglican/" class="btn btn-success btn-lg mx-2 mb-2" style="min-width: 200px;">HYMNS ANCIENT AND MODERN (ANGLICAN)</a>
+        </div>
+
+        <!-- Additional links -->
+        <div class="d-flex justify-content-center flex-wrap mt-4">
+            <a href="/presby/" class="btn btn-info btn-lg mx-2 mb-2" style="min-width: 200px;">PRESBYTERIAN HYMN BOOK</a>
+            <a href="#" class="btn btn-warning btn-lg mx-2 mb-2" style="min-width: 200px;">ANTHEMS/ HIGHLIFES</a>
+        </div>
+
+        <!-- Privacy Policy link -->
+        <p class="mt-4">
+            <a href="/privacy/" class="text-muted">Privacy Policy</a> |
+            For inquiries, contact us at: <a href="mailto:info@asedachorale.com">kadukpo@yahoo.com</a>
+        </p>
     </div>
 
-
-
+    <!-- Search Hymns Section -->
+    <div class="container mt-5 p-4" style="border: 5px solid #8d5524; background-color: #fdf5e6; border-radius: 10px;">
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="text-center">
+                <p class="mt-4"> Type the lyrics of a hymn.</p>
+                <button type="submit" class="btn btn-primary btn-lg">Search</button>
+            </div>
+        </form>
+        {% if results %}
+        <h2 class="mt-5">Results</h2>
+        <ul class="list-group mt-3">
+            {% for source, hymn_number, hymn_content, url in results %}
+            <li class="list-group-item">
+                <a href="{{ url }}" class="font-weight-bold">{{ hymn_number }} ({{ source }})</a>
+                <div class="hymn-content mt-2">
+                    {{ hymn_content }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
 {% endblock %}
